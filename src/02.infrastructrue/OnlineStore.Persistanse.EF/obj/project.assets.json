@@ -874,6 +874,19 @@
         "runtime": {
           "bin/placeholder/OnlineStore.Entities.dll": {}
         }
+      },
+      "OnlineStore.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OnlineStore.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineStore.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineStore.Services.dll": {}
+        }
       }
     }
   },
@@ -2191,6 +2204,11 @@
       "type": "project",
       "path": "../../01.core/OnlineStore.Entities/OnlineStore.Entities.csproj",
       "msbuildProject": "../../01.core/OnlineStore.Entities/OnlineStore.Entities.csproj"
+    },
+    "OnlineStore.Services/1.0.0": {
+      "type": "project",
+      "path": "../../01.core/OnlineStore.Services/OnlineStore.Services.csproj",
+      "msbuildProject": "../../01.core/OnlineStore.Services/OnlineStore.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2200,7 +2218,8 @@
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.18",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.18",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.18",
-      "OnlineStore.Entities >= 1.0.0"
+      "OnlineStore.Entities >= 1.0.0",
+      "OnlineStore.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2230,6 +2249,9 @@
           "projectReferences": {
             "C:\\Users\\Nadim\\RiderProjects\\Online Store\\src\\01.core\\OnlineStore.Entities\\OnlineStore.Entities.csproj": {
               "projectPath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\src\\01.core\\OnlineStore.Entities\\OnlineStore.Entities.csproj"
+            },
+            "C:\\Users\\Nadim\\RiderProjects\\Online Store\\src\\01.core\\OnlineStore.Services\\OnlineStore.Services.csproj": {
+              "projectPath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\src\\01.core\\OnlineStore.Services\\OnlineStore.Services.csproj"
             }
           }
         }

@@ -18,3 +18,5 @@ C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.TestTools\obj\Debug\n
 C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.TestTools\obj\Debug\net6.0\ref\OnlineStore.TestTools.dll
 C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.TestTools\bin\Debug\net6.0\OnlineStore.Entities.dll
 C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.TestTools\bin\Debug\net6.0\OnlineStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.TestTools\bin\Debug\net6.0\OnlineStore.Services.dll
+C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.TestTools\bin\Debug\net6.0\OnlineStore.Services.pdb

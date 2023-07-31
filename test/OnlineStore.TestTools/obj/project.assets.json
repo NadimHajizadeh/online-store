@@ -2518,13 +2518,27 @@
           "Microsoft.EntityFrameworkCore": "6.0.18",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.18",
-          "OnlineStore.Entities": "1.0.0"
+          "OnlineStore.Entities": "1.0.0",
+          "OnlineStore.Services": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OnlineStore.Persistanse.EF.dll": {}
         },
         "runtime": {
           "bin/placeholder/OnlineStore.Persistanse.EF.dll": {}
+        }
+      },
+      "OnlineStore.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OnlineStore.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineStore.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineStore.Services.dll": {}
         }
       }
     }
@@ -7493,6 +7507,11 @@
       "type": "project",
       "path": "../../src/02.infrastructrue/OnlineStore.Persistanse.EF/OnlineStore.Persistanse.EF.csproj",
       "msbuildProject": "../../src/02.infrastructrue/OnlineStore.Persistanse.EF/OnlineStore.Persistanse.EF.csproj"
+    },
+    "OnlineStore.Services/1.0.0": {
+      "type": "project",
+      "path": "../../src/01.core/OnlineStore.Services/OnlineStore.Services.csproj",
+      "msbuildProject": "../../src/01.core/OnlineStore.Services/OnlineStore.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {

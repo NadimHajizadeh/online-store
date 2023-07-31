@@ -5,4 +5,10 @@
 	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/Storage/@EntryValue">ThisComputer</s:String>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\Nadim\.nuget\packages\microsoft.entityframeworkcore.relational\6.0.18\lib\net6.0\Microsoft.EntityFrameworkCore.Relational.dll" /&gt;&#xD;
-&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2a8c05f5_002D4be9_002D4e31_002D9dcf_002D983361b7122a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Run" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B6191F1B-89A2-4810-994C-BEABADFBB54E::net6.0::OnlineStore.Specs.Test.ProductGroupServiceTest.Add.DefineProductGroup.Run&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.profuctGroups.ProductGroupServiceTest.Define_Certain_add_a_ProductGroup&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

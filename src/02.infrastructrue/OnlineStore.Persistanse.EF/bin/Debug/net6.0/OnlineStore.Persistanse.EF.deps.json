@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.Relational": "6.0.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.18",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.18",
-          "OnlineStore.Entities": "1.0.0"
+          "OnlineStore.Entities": "1.0.0",
+          "OnlineStore.Services": "1.0.0"
         },
         "runtime": {
           "OnlineStore.Persistanse.EF.dll": {}
@@ -553,6 +554,14 @@
         "runtime": {
           "OnlineStore.Entities.dll": {}
         }
+      },
+      "OnlineStore.Services/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Entities": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Services.dll": {}
+        }
       }
     }
   },
@@ -899,6 +908,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "OnlineStore.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

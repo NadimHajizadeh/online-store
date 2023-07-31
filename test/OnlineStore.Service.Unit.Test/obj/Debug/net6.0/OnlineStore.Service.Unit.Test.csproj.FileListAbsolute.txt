@@ -190,3 +190,6 @@ C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.Service.Unit.Test\obj
 C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.Service.Unit.Test\obj\Debug\net6.0\ref\OnlineStore.Service.Unit.Test.dll
 C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.Service.Unit.Test\bin\Debug\net6.0\OnlineStore.Entities.dll
 C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.Service.Unit.Test\bin\Debug\net6.0\OnlineStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.Service.Unit.Test\bin\Debug\net6.0\OnlineStore.Services.dll
+C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.Service.Unit.Test\bin\Debug\net6.0\OnlineStore.Services.pdb
+C:\Users\Nadim\RiderProjects\Online Store\test\OnlineStore.Service.Unit.Test\bin\Debug\net6.0\FluentAssertions.dll

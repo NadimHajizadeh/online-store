@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0qM8ruIDW5pzXUUYeLWOkjVmWSlxNwdps/qO8ZzBY3CPyDbKyp5SVRMmYTOLOqSzxHwWEuJ99k3G1f0cr2UgxQ==",
+  "dgSpecHash": "EaPHVs4Y0Pk3bkJKp5+YCc1tEOOWbEHlbcYPts6Ks+euAS1f25g7ljngPzanwIppe4FR7+y7MirtKgl/9ZXhHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\src\\02.infrastructrue\\OnlineStore.Persistanse.EF\\OnlineStore.Persistanse.EF.csproj",
   "expectedPackageFiles": [
