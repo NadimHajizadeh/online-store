@@ -8,6 +8,22 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "FluentAssertions/6.11.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.4.0"
+        },
+        "compile": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.18": {
         "type": "package",
         "compile": {
@@ -1577,7 +1593,7 @@
           "System.Security.Permissions": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -2331,7 +2347,7 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
         },
@@ -2582,7 +2598,7 @@
           "System.Windows.Extensions": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {
+          "ref/netcoreapp3.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
@@ -2595,7 +2611,7 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/_._": {
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {
             "related": ".xml"
           }
         },
@@ -2786,7 +2802,7 @@
           "System.Drawing.Common": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {
+          "ref/netcoreapp3.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
@@ -2978,13 +2994,27 @@
           "Microsoft.EntityFrameworkCore": "6.0.18",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.18",
-          "OnlineStore.Entities": "1.0.0"
+          "OnlineStore.Entities": "1.0.0",
+          "OnlineStore.Services": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OnlineStore.Persistanse.EF.dll": {}
         },
         "runtime": {
           "bin/placeholder/OnlineStore.Persistanse.EF.dll": {}
+        }
+      },
+      "OnlineStore.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OnlineStore.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineStore.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineStore.Services.dll": {}
         }
       },
       "OnlineStore.TestTools/1.0.0": {
@@ -3061,6 +3091,36 @@
         "coverlet-icon.png",
         "coverlet.collector.3.1.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "FluentAssertions/6.11.0": {
+      "sha512": "aBaagwdNtVKkug1F3imGXUlmoBd8ZUZX8oQ5niThaJhF79SpESe1Gzq7OFuZkQdKD5Pa4Mone+jrbas873AT4g==",
+      "type": "package",
+      "path": "fluentassertions/6.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FluentAssertions.png",
+        "fluentassertions.6.11.0.nupkg.sha512",
+        "fluentassertions.nuspec",
+        "lib/net47/FluentAssertions.dll",
+        "lib/net47/FluentAssertions.pdb",
+        "lib/net47/FluentAssertions.xml",
+        "lib/net6.0/FluentAssertions.dll",
+        "lib/net6.0/FluentAssertions.pdb",
+        "lib/net6.0/FluentAssertions.xml",
+        "lib/netcoreapp2.1/FluentAssertions.dll",
+        "lib/netcoreapp2.1/FluentAssertions.pdb",
+        "lib/netcoreapp2.1/FluentAssertions.xml",
+        "lib/netcoreapp3.0/FluentAssertions.dll",
+        "lib/netcoreapp3.0/FluentAssertions.pdb",
+        "lib/netcoreapp3.0/FluentAssertions.xml",
+        "lib/netstandard2.0/FluentAssertions.dll",
+        "lib/netstandard2.0/FluentAssertions.pdb",
+        "lib/netstandard2.0/FluentAssertions.xml",
+        "lib/netstandard2.1/FluentAssertions.dll",
+        "lib/netstandard2.1/FluentAssertions.pdb",
+        "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.18": {
@@ -8906,6 +8966,11 @@
       "path": "../../src/02.infrastructrue/OnlineStore.Persistanse.EF/OnlineStore.Persistanse.EF.csproj",
       "msbuildProject": "../../src/02.infrastructrue/OnlineStore.Persistanse.EF/OnlineStore.Persistanse.EF.csproj"
     },
+    "OnlineStore.Services/1.0.0": {
+      "type": "project",
+      "path": "../../src/01.core/OnlineStore.Services/OnlineStore.Services.csproj",
+      "msbuildProject": "../../src/01.core/OnlineStore.Services/OnlineStore.Services.csproj"
+    },
     "OnlineStore.TestTools/1.0.0": {
       "type": "project",
       "path": "../OnlineStore.TestTools/OnlineStore.TestTools.csproj",
@@ -8914,6 +8979,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FluentAssertions >= 6.11.0",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "OnlineStore.Persistanse.EF >= 1.0.0",
       "OnlineStore.TestTools >= 1.0.0",
@@ -8966,6 +9032,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FluentAssertions": {
+            "target": "Package",
+            "version": "[6.11.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.1.0, )"

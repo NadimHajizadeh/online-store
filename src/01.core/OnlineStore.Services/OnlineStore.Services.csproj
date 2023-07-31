@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts\" />
+      <Folder Include="profuctGroups\Exceptions\" />
     </ItemGroup>
 
 </Project>

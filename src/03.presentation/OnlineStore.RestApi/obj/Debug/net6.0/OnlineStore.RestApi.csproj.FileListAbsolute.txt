@@ -75,3 +75,5 @@ C:\Users\Nadim\RiderProjects\Online Store\src\03.presentation\OnlineStore.RestAp
 C:\Users\Nadim\RiderProjects\Online Store\src\03.presentation\OnlineStore.RestApi\obj\Debug\net6.0\ref\OnlineStore.RestApi.dll
 C:\Users\Nadim\RiderProjects\Online Store\src\03.presentation\OnlineStore.RestApi\bin\Debug\net6.0\OnlineStore.Entities.dll
 C:\Users\Nadim\RiderProjects\Online Store\src\03.presentation\OnlineStore.RestApi\bin\Debug\net6.0\OnlineStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\03.presentation\OnlineStore.RestApi\bin\Debug\net6.0\OnlineStore.Services.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\03.presentation\OnlineStore.RestApi\bin\Debug\net6.0\OnlineStore.Services.pdb

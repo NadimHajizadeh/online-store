@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Jd+THwGWzhX6+bcrizaNMIHC3r3hNFjNxikDcq+EzRVpUUVYew7XUJ0RLEMNiUBnSqjZfe3InDLOOlaXhpq3aA==",
+  "dgSpecHash": "kcPWKstB9j0MxdNmKzTGQ+0nMZGVjcyHAakY6WdT++FvOuA1KE7kZIwSURcV/SZcny8KOR4p8fgHozV0ihts7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\test\\OnlineStore.Service.Unit.Test\\OnlineStore.Service.Unit.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nadim\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\Nadim\\.nuget\\packages\\fluentassertions\\6.11.0\\fluentassertions.6.11.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.18\\microsoft.aspnetcore.cryptography.internal.6.0.18.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.18\\microsoft.aspnetcore.cryptography.keyderivation.6.0.18.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.18\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.18.nupkg.sha512",

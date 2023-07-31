@@ -1511,10 +1511,19 @@
           "Microsoft.EntityFrameworkCore": "6.0.18",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.18",
-          "OnlineStore.Entities": "1.0.0"
+          "OnlineStore.Entities": "1.0.0",
+          "OnlineStore.Services": "1.0.0"
         },
         "runtime": {
           "OnlineStore.Persistanse.EF.dll": {}
+        }
+      },
+      "OnlineStore.Services/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Entities": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Services.dll": {}
         }
       }
     }
@@ -2495,6 +2504,11 @@
       "sha512": ""
     },
     "OnlineStore.Persistanse.EF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

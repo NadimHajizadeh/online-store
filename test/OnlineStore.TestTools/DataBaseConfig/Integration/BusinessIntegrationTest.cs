@@ -6,7 +6,7 @@ namespace OnlineStore.TestTools.DataBaseConfig.Integration;
 public class BusinessIntegrationTest : EFDataContextDatabaseFixture
 {
     protected EFDataContext DbContext { get; }
-    protected EFDataContext SetupContext { get; }
+    protected EFDataContext SetupContexts { get; }
     protected EFDataContext ReadContext { get; }
     protected string TenantId { get; } = "Tenant_Id";
 
@@ -18,7 +18,7 @@ public class BusinessIntegrationTest : EFDataContextDatabaseFixture
             TenantId = tenantId;
         }
 
-        SetupContext = CreateDataContext(TenantId);
+        SetupContexts = CreateDataContext(TenantId);
         DbContext = CreateDataContext(TenantId);
         ReadContext = CreateDataContext(TenantId);
     }

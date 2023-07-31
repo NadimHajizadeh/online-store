@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "OnlineStore.Service.Unit.Test/1.0.0": {
         "dependencies": {
+          "FluentAssertions": "6.11.0",
           "Microsoft.NET.Test.Sdk": "17.1.0",
           "OnlineStore.Persistanse.EF": "1.0.0",
           "OnlineStore.TestTools": "1.0.0",
@@ -20,6 +21,17 @@
         }
       },
       "coverlet.collector/3.1.2": {},
+      "FluentAssertions/6.11.0": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "assemblyVersion": "6.11.0.0",
+            "fileVersion": "6.11.0.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.18": {
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -1873,10 +1885,19 @@
           "Microsoft.EntityFrameworkCore": "6.0.18",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.18",
-          "OnlineStore.Entities": "1.0.0"
+          "OnlineStore.Entities": "1.0.0",
+          "OnlineStore.Services": "1.0.0"
         },
         "runtime": {
           "OnlineStore.Persistanse.EF.dll": {}
+        }
+      },
+      "OnlineStore.Services/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Entities": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Services.dll": {}
         }
       },
       "OnlineStore.TestTools/1.0.0": {
@@ -1910,6 +1931,13 @@
       "sha512": "sha512-wuLDIDKD5XMt0A7lE31JPenT7QQwZPFkP5rRpdJeblyXZ9MGLI8rYjvm5fvAKln+2/X+4IxxQDxBtwdrqKNLZw==",
       "path": "coverlet.collector/3.1.2",
       "hashPath": "coverlet.collector.3.1.2.nupkg.sha512"
+    },
+    "FluentAssertions/6.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aBaagwdNtVKkug1F3imGXUlmoBd8ZUZX8oQ5niThaJhF79SpESe1Gzq7OFuZkQdKD5Pa4Mone+jrbas873AT4g==",
+      "path": "fluentassertions/6.11.0",
+      "hashPath": "fluentassertions.6.11.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.18": {
       "type": "package",
@@ -2986,6 +3014,11 @@
       "sha512": ""
     },
     "OnlineStore.Persistanse.EF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
