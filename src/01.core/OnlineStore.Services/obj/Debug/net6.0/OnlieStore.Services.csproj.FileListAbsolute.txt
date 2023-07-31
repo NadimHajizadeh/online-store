@@ -1,0 +1,15 @@
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\bin\Debug\net6.0\OnlieStore.Services.deps.json
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\bin\Debug\net6.0\OnlieStore.Services.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\bin\Debug\net6.0\OnlieStore.Services.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\bin\Debug\net6.0\OnlieStore.Entities.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\bin\Debug\net6.0\OnlieStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.csproj.AssemblyReference.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.AssemblyInfoInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.AssemblyInfo.cs
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.csproj.CopyComplete
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\refint\OnlieStore.Services.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\OnlieStore.Services.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Services\obj\Debug\net6.0\ref\OnlieStore.Services.dll

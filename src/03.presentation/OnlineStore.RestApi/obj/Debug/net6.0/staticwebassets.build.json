@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TjbnjOkAFar5TjcAE/0VDEXnU09E9lF4sdSRsW8Z9Vg=",
+  "Source": "OnlineStore.RestApi",
+  "BasePath": "_content/OnlineStore.RestApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

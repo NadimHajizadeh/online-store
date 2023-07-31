@@ -1,0 +1,15 @@
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\bin\Debug\net6.0\BluePrint.Services.deps.json
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\bin\Debug\net6.0\BluePrint.Services.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\bin\Debug\net6.0\BluePrint.Services.pdb
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\bin\Debug\net6.0\BluePrint.Entities.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\bin\Debug\net6.0\BluePrint.Entities.pdb
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.csproj.AssemblyReference.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.AssemblyInfoInputs.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.AssemblyInfo.cs
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.csproj.CopyComplete
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\refint\BluePrint.Services.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\BluePrint.Services.pdb
+C:\Users\Nadim\RiderProjects\BluePrint\src\01.core\BluePrint.Services\obj\Debug\net6.0\ref\BluePrint.Services.dll

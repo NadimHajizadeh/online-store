@@ -1,0 +1,12 @@
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\bin\Debug\net6.0\OnlineStore.Infrastructure.deps.json
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\bin\Debug\net6.0\OnlineStore.Infrastructure.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\bin\Debug\net6.0\OnlineStore.Infrastructure.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\OnlineStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\OnlineStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\OnlineStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\OnlineStore.Infrastructure.AssemblyInfo.cs
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\OnlineStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\OnlineStore.Infrastructure.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\refint\OnlineStore.Infrastructure.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\OnlineStore.Infrastructure.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net6.0\ref\OnlineStore.Infrastructure.dll

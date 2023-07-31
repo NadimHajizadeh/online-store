@@ -1,0 +1,12 @@
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\bin\Debug\net6.0\OnlineStore.Entities.deps.json
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\bin\Debug\net6.0\OnlineStore.Entities.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\bin\Debug\net6.0\OnlineStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\OnlineStore.Entities.csproj.AssemblyReference.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\OnlineStore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\OnlineStore.Entities.AssemblyInfoInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\OnlineStore.Entities.AssemblyInfo.cs
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\OnlineStore.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\OnlineStore.Entities.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\refint\OnlineStore.Entities.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\OnlineStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlineStore.Entities\obj\Debug\net6.0\ref\OnlineStore.Entities.dll

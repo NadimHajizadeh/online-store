@@ -1,0 +1,12 @@
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\bin\Debug\net6.0\OnlieStore.Entities.deps.json
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\bin\Debug\net6.0\OnlieStore.Entities.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\bin\Debug\net6.0\OnlieStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\OnlieStore.Entities.csproj.AssemblyReference.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\OnlieStore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\OnlieStore.Entities.AssemblyInfoInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\OnlieStore.Entities.AssemblyInfo.cs
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\OnlieStore.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\OnlieStore.Entities.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\refint\OnlieStore.Entities.dll
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\OnlieStore.Entities.pdb
+C:\Users\Nadim\RiderProjects\Online Store\src\01.core\OnlieStore.Entities\obj\Debug\net6.0\ref\OnlieStore.Entities.dll

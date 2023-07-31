@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "oQTM07Cf7l0/ouCXgJ8/bUMo9Cjw2Pw8RatkkOOJru5m8a4QTtBzFn25bnBzwd+4XCDvo5y1atI9arcgo6K4xQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\src\\02.infrastructrue\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

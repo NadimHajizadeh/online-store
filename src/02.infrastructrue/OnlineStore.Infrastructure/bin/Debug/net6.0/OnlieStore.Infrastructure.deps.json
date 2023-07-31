@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "OnlieStore.Infrastructure/1.0.0": {
+        "runtime": {
+          "OnlieStore.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlieStore.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

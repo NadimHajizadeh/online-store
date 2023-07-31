@@ -1,0 +1,14 @@
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\bin\Debug\net6.0\BluePrint.Persistanse.EF.deps.json
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\bin\Debug\net6.0\BluePrint.Persistanse.EF.runtimeconfig.json
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\bin\Debug\net6.0\BluePrint.Persistanse.EF.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\bin\Debug\net6.0\BluePrint.Persistanse.EF.pdb
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.csproj.AssemblyReference.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.AssemblyInfoInputs.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.AssemblyInfo.cs
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\refint\BluePrint.Persistanse.EF.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.pdb
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\BluePrint.Persistanse.EF.genruntimeconfig.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Persistanse.EF\obj\Debug\net6.0\ref\BluePrint.Persistanse.EF.dll

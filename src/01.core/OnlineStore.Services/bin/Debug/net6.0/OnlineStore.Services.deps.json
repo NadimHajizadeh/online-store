@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "OnlineStore.Services/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Entities": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Services.dll": {}
+        }
+      },
+      "OnlineStore.Entities/1.0.0": {
+        "runtime": {
+          "OnlineStore.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineStore.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

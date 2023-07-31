@@ -1,0 +1,12 @@
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\bin\Debug\net6.0\BluePrint.Infrastructure.deps.json
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\bin\Debug\net6.0\BluePrint.Infrastructure.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\bin\Debug\net6.0\BluePrint.Infrastructure.pdb
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\BluePrint.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\BluePrint.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\BluePrint.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\BluePrint.Infrastructure.AssemblyInfo.cs
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\BluePrint.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\BluePrint.Infrastructure.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\refint\BluePrint.Infrastructure.dll
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\BluePrint.Infrastructure.pdb
+C:\Users\Nadim\RiderProjects\BluePrint\src\02.infrastructrue\BluePrint.Infrastructure\obj\Debug\net6.0\ref\BluePrint.Infrastructure.dll
