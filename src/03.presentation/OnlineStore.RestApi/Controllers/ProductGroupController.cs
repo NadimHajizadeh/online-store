@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Contracts.Dto;
+using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 
 namespace OnlineStore.RestApi.Controllers;
 [Route("product-groups")]
@@ -18,4 +19,11 @@ public class ProductGroupController : Controller
     {
         _service.Define(dto);
     }
+
+    [HttpPut("{id}")]
+    public void Rename([FromRoute]int id,[FromBody]RenameProuductGroupDto dto)
+    {
+        _service.Rename(id,dto);
+    }
+    
 }

@@ -23,4 +23,15 @@ public class EFProductGroupRepository : ProductGroupRepository
         return
             _productGroups.Any(_ => _.Name == name);
     }
+
+    public ProductGroup? FindeById(int productGroupId)
+    {
+        return
+            _productGroups.Find(productGroupId);
+    }
+
+    public void Update(ProductGroup productGroup)
+    {
+        _productGroups.Update(productGroup);
+    }
 }
