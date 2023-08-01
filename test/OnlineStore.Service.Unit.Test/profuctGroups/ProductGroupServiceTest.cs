@@ -10,6 +10,7 @@ using OnlineStore.TestTools.ProductGroups.Factories;
 namespace OnlineStore.Service.Unit.Test.profuctGroups;
 
 public class ProductGroupServiceTest : BusinessUnitTest
+
 {
     private readonly ProductGroupService _sut;
 
