@@ -3,6 +3,7 @@ using OnlineStore.Entities;
 using OnlineStore.Persistanse.EF;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Exceptions;
+using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
 using OnlineStore.TestTools.ProductGroups.Factories;
@@ -39,6 +40,46 @@ public class ProductGroupServiceTest : BusinessUnitTest
         var dto = AddProductGroupDtoFactory.Generate("dummy");
 
         var expected = () => _sut.Define(dto);
+
+        expected.Should().ThrowExactly<DuplicatedProductGroupNameException>();
+    }
+
+    [Fact]
+    public void Rename_Certain_rename_a_prouductGroup()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        DbContext.Save(productGroup);
+        var dto = RenameProuductGroupDtoFactory.Generate("dummy_rename");
+
+        _sut.Rename(productGroup.Id, dto);
+
+        var expected = ReadContext.Set<ProductGroup>().Single();
+        expected.Id.Should().Be(productGroup.Id);
+        expected.Name.Should().Be(dto.Name);
+    }
+
+    [Fact]
+    public void Rename_Certain_prouductGroup_not_found_exception()
+    {
+        var invalidId = 0;
+        var dto = RenameProuductGroupDtoFactory.Generate("dummy_rename");
+
+        var expected = () => _sut.Rename(invalidId, dto);
+
+        expected.Should().ThrowExactly<ProuductGroupNotFoundException>();
+    }
+
+    [Fact]
+    public void Rename_Certain_duplicated_name_exception_throw()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        var secondProuductGroup = ProductGroupFactory.Generate("dummy_second");
+        DbContext.Save(productGroup);
+        DbContext.Save(secondProuductGroup);
+        var dto =
+            RenameProuductGroupDtoFactory.Generate(secondProuductGroup.Name);
+
+        var expected = () => _sut.Rename(productGroup.Id, dto);
 
         expected.Should().ThrowExactly<DuplicatedProductGroupNameException>();
     }

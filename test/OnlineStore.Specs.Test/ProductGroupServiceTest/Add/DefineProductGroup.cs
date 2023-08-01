@@ -11,13 +11,6 @@ namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
 [Scenario("ثبت گروه ")]
 public class DefineProductGroup : BusinessIntegrationTest
 {
-    private readonly ProductGroupService _sut;
-
-    public DefineProductGroup()
-    {
-        _sut = ProductGroupServiceFactory.Generate(SetupContexts);
-    }
-
     [Given("فهرست گروه خالی است")]
     public void Given()
     {
@@ -26,8 +19,9 @@ public class DefineProductGroup : BusinessIntegrationTest
     [When("یک گروه با نام بهداشتی را ثبت میکنم ")]
     public void When()
     {
+        var sut = ProductGroupServiceFactory.Generate(SetupContexts);
         var dto = AddProductGroupDtoFactory.Generate("بهداشتی");
-        _sut.Define(dto);
+        sut.Define(dto);
     }
 
     [Then("در فهرست گروه ها یک گروه با نام بهداشتی باید وجود داشته باشد")]
