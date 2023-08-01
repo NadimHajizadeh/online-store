@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineStore.Persistanse.EF;
+using OnlineStore.Persistanse.EF.ProductGroups;
 using OnlineStore.Services.Contracts;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
+using OnlineStore.Services.ProductGroups;
+using OnlineStore.Services.ProductGroups.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -16,9 +18,6 @@ builder.Services.AddDbContext<EFDataContext>(_ =>
 builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
 builder.Services.AddScoped<ProductGroupService,ProductGroupAppService>();
 builder.Services.AddScoped<ProductGroupRepository,EFProductGroupRepository>();
-
-//todo refactor add pg 
-
 
 
 var app = builder.Build();

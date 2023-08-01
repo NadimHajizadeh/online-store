@@ -1,7 +1,9 @@
 ﻿using OnlineStore.Persistanse.EF;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
+using OnlineStore.Persistanse.EF.ProductGroups;
+using OnlineStore.Services.ProductGroups;
+using OnlineStore.Services.ProductGroups.Contracts;
 
-namespace OnlineStore.TestTools.ProductGroup;
+namespace OnlineStore.TestTools.ProductGroups.Factories;
 
 public static class ProductGroupServiceFactory
 {

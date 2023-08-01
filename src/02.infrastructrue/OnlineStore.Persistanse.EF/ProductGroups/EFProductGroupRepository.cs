@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
-using OnlineStore.Persistanse.EF;
+using OnlineStore.Services.ProductGroups.Contracts;
 
-namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
+namespace OnlineStore.Persistanse.EF.ProductGroups;
 
 public class EFProductGroupRepository : ProductGroupRepository
 {
@@ -16,5 +16,11 @@ public class EFProductGroupRepository : ProductGroupRepository
     public void Add(ProductGroup productGroup)
     {
         _productGroups.Add(productGroup);
+    }
+
+    public bool IsDuplicatedName(string name)
+    {
+        return
+            _productGroups.Any(_ => _.Name == name);
     }
 }
