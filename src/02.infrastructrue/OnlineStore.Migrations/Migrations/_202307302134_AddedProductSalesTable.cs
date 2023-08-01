@@ -7,7 +7,7 @@ public class _202307302134_AddedProductSalesTable : Migration
     public override void Up()
     {
         Create.Table("ProductSales")
-            .WithColumn("FactorNumber").AsString(36).PrimaryKey()
+            .WithColumn("FactorNumber").AsGuid().PrimaryKey()
             .WithColumn("CustomerName").AsString(50).NotNullable()
             .WithColumn("Date").AsDateTime().NotNullable()
             .WithColumn("ProductId").AsInt32().NotNullable()

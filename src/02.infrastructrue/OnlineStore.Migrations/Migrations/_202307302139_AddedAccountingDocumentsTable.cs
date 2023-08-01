@@ -11,7 +11,7 @@ public class _202307302139_AddedAccountingDocumentsTable : Migration
             .WithColumn("DocumentNumber").AsInt32().PrimaryKey()
             .WithColumn("Date").AsDateTime().NotNullable()
             .WithColumn("TotalPrice").AsDouble().NotNullable()
-            .WithColumn("SalesFactorNumber").AsString(36)
+            .WithColumn("SalesFactorNumber").AsGuid()
             .ForeignKey("FK_AccountingDocuments_ProductSales", "ProductSales",
                 "FactorNumber");
     }
