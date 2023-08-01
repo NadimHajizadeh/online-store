@@ -1,7 +1,10 @@
 ﻿using OnlineStore.Entities;
 using OnlineStore.Services.Contracts;
+using OnlineStore.Services.ProductGroups.Contracts;
+using OnlineStore.Services.ProductGroups.Contracts.Dto;
+using OnlineStore.Services.ProductGroups.Exceptions;
 
-namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
+namespace OnlineStore.Services.ProductGroups;
 
 public class ProductGroupAppService : ProductGroupService
 {
@@ -17,6 +20,8 @@ public class ProductGroupAppService : ProductGroupService
 
     public void Define(AddProductGroupDto dto)
     {
+        StopIfDuplicatedName(dto.Name);
+
         var productGroup = new ProductGroup()
         {
             Name = dto.Name
@@ -24,5 +29,14 @@ public class ProductGroupAppService : ProductGroupService
 
         _repository.Add(productGroup);
         _unitOfWork.Complete();
+    }
+
+    private void StopIfDuplicatedName(string name)
+    {
+        var isDuplicatedName = _repository.IsDuplicatedName(name);
+        if (isDuplicatedName)
+        {
+            throw new DuplicatedProductGroupNameException();
+        }
     }
 }

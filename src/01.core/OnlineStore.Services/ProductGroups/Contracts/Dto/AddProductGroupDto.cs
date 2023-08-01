@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
+namespace OnlineStore.Services.ProductGroups.Contracts.Dto;
 
 public class AddProductGroupDto
 {

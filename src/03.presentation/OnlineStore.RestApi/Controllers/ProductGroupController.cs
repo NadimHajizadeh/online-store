@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
+using OnlineStore.Services.ProductGroups.Contracts;
+using OnlineStore.Services.ProductGroups.Contracts.Dto;
 
 namespace OnlineStore.RestApi.Controllers;
 [Route("product-groups")]

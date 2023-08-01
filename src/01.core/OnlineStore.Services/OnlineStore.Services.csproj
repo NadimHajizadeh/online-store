@@ -10,8 +10,4 @@
       <ProjectReference Include="..\OnlineStore.Entities\OnlineStore.Entities.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="profuctGroups\Exceptions\" />
-    </ItemGroup>
-
 </Project>

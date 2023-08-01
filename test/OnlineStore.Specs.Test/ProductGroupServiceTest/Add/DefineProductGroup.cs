@@ -2,8 +2,9 @@
 using FluentAssertions;
 using OnlineStore.Entities;
 using OnlineStore.Persistanse.EF;
+using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
-using OnlineStore.TestTools.ProductGroup;
+using OnlineStore.TestTools.ProductGroups.Factories;
 
 namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Add;
 
