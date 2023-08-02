@@ -22,7 +22,7 @@ public class DeleteProductGroupFailed : BusinessIntegrationTest
     public void Given()
     {
         _productGroup = ProductGroupFactory.Generate("بهداشتی");
-        var product = ProductFactory.Generate(_productGroup, "شامپو");
+        var product = ProductFactory.Generate(_productGroup, "شامپو",10);
         DbContext.Save(product);
     }
 

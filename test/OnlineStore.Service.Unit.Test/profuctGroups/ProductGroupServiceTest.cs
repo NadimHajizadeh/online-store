@@ -111,7 +111,7 @@ public class ProductGroupServiceTest : BusinessUnitTest
     public void Remove_Certain_productGroup_has_product_exception()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product = ProductFactory.Generate(productGroup, "dummy");
+        var product = ProductFactory.Generate(productGroup, "dummy",10);
         DbContext.Save(product);
 
         var expected = () => _sut.Remove(productGroup.Id);
