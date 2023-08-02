@@ -3,10 +3,12 @@ using OnlineStore.Entities;
 using OnlineStore.Persistanse.EF;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Exceptions;
+using OnlineStore.Specs.Test.ProductGroupServiceTest.Delete;
 using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
 using OnlineStore.TestTools.ProductGroups.Factories;
+using OnlineStore.TestTools.Products.Factories;
 
 namespace OnlineStore.Service.Unit.Test.profuctGroups;
 
@@ -82,5 +84,38 @@ public class ProductGroupServiceTest : BusinessUnitTest
         var expected = () => _sut.Rename(productGroup.Id, dto);
 
         expected.Should().ThrowExactly<DuplicatedProductGroupNameException>();
+    }
+
+    [Fact]
+    public void Remove_Certain_remove_a_productGroup()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        DbContext.Save(productGroup);
+
+        _sut.Remove(productGroup.Id);
+
+        ReadContext.Set<ProductGroup>().Should().HaveCount(0);
+    }
+
+    [Fact]
+    public void Remove_Certain_prouductGroup_not_found_exception()
+    {
+        var invalidId = 0;
+
+        var expected = () => _sut.Remove(invalidId);
+
+        expected.Should().ThrowExactly<ProuductGroupNotFoundException>();
+    }
+
+    [Fact]
+    public void Remove_Certain_productGroup_has_product_exception()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        var product = ProductFactory.Generate(productGroup, "dummy");
+        DbContext.Save(product);
+
+        var expected = () => _sut.Remove(productGroup.Id);
+
+        expected.Should().ThrowExactly<ProuductGroupHasProuductException>();
     }
 }

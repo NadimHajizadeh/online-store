@@ -8,4 +8,5 @@ public interface ProductGroupService
 {
     void Define(AddProductGroupDto dto);
     void Rename(int productGroupID, RenameProuductGroupDto dto);
+    void Remove(int productGroupId);
 }

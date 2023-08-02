@@ -7,10 +7,12 @@ namespace OnlineStore.Persistanse.EF.ProductGroups;
 public class EFProductGroupRepository : ProductGroupRepository
 {
     private readonly DbSet<ProductGroup> _productGroups;
+    private readonly DbSet<Product> _products;
 
     public EFProductGroupRepository(EFDataContext context)
     {
         _productGroups = context.Set<ProductGroup>();
+        _products = context.Set<Product>();
     }
 
     public void Add(ProductGroup productGroup)
@@ -33,5 +35,16 @@ public class EFProductGroupRepository : ProductGroupRepository
     public void Update(ProductGroup productGroup)
     {
         _productGroups.Update(productGroup);
+    }
+
+    public void Remove(ProductGroup productGroup)
+    {
+        _productGroups.Remove(productGroup);
+    }
+
+    public bool HasProduct(int productGroupId)
+    {
+        return
+            _products.Any(_ => _.ProductGroupId == productGroupId);
     }
 }

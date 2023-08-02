@@ -8,4 +8,6 @@ public interface ProductGroupRepository
     bool IsDuplicatedName(string name);
     ProductGroup? FindeById(int productGroupId);
     void Update(ProductGroup productGroup);
+    void Remove(ProductGroup productGroup);
+    bool HasProduct(int productGroupId);
 }
