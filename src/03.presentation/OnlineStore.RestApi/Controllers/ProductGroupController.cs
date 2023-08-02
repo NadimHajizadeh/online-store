@@ -4,6 +4,7 @@ using OnlineStore.Services.ProductGroups.Contracts.Dto;
 using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 
 namespace OnlineStore.RestApi.Controllers;
+
 [Route("product-groups")]
 public class ProductGroupController : Controller
 {
@@ -21,9 +22,15 @@ public class ProductGroupController : Controller
     }
 
     [HttpPut("{id}")]
-    public void Rename([FromRoute]int id,[FromBody]RenameProuductGroupDto dto)
+    public void Rename([FromRoute] int id,
+        [FromBody] RenameProuductGroupDto dto)
     {
-        _service.Rename(id,dto);
+        _service.Rename(id, dto);
     }
-    
+
+    [HttpDelete("{id}")]
+    public void Delete([FromRoute] int id)
+    {
+        _service.Remove(id);
+    }
 }
