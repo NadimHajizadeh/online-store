@@ -6,5 +6,7 @@ public interface ProductRepository
 {
      void Add(Product product);
 
-     bool IsDuplicatedTitle(string title);
+     bool IsDuplicatedTitle(string title,int productGroupId);
+     void Remove(Product product);
+     Product FindeById(int productId);
 }

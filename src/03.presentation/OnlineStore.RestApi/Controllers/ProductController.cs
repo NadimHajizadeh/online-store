@@ -19,4 +19,10 @@ public class ProductController : Controller
     {
         _service.Define(dto);
     }
+
+    [HttpDelete("{id}")]
+    public void Delete([FromRoute] int id)
+    {
+        _service.Remove(id);
+    }
 }

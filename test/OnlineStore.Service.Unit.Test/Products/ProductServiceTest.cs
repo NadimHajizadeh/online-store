@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
 using OnlineStore.Services.ProductGroups.Exceptions;
 using OnlineStore.Services.Products.Contracts;
@@ -62,5 +63,30 @@ public class ProductServiceTest : BusinessUnitTest
         var expected = () => _sut.Define(dto);
 
         expected.Should().ThrowExactly<DuplicatedProductNameException>();
+    }
+
+    [Fact]
+    public void Remove_Certain_delete_a_product()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        var product = ProductFactory.Generate(productGroup, "dummy");
+        DbContext.Save(product);
+
+        _sut.Remove(product.Id);
+
+        var expected = ReadContext.Set<ProductGroup>()
+            .Include(_ => _.Products)
+            .Single();
+        expected.Products.Should().HaveCount(0);
+    }
+
+    [Fact]
+    public void Remove_Certain_product_not_found_exception()
+    {
+        var invalidId = 0;
+
+        var expected = () => _sut.Remove(invalidId);
+
+        expected.Should().ThrowExactly<ProuductNotFoundException>();
     }
 }

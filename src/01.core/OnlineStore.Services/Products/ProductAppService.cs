@@ -1,4 +1,5 @@
 ﻿using OnlineStore.Entities;
+using OnlineStore.Service.Unit.Test.Products;
 using OnlineStore.Services.Contracts;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Exceptions;
@@ -26,7 +27,7 @@ public class ProductAppService : ProductService
     public void Define(AddProductDto dto)
     {
         StopIfInvalidProductGroupId(dto.ProductGroupId);
-        StopIfDuplicatedName(dto.Title);
+        StopIfDuplicatedName(dto.Title,dto.ProductGroupId);
 
         var product = new Product()
         {
@@ -40,9 +41,27 @@ public class ProductAppService : ProductService
         _unitOfWork.Complete();
     }
 
-    private void StopIfDuplicatedName(string title)
+    public void Remove(int productId)
     {
-        var isDuplicatedName = _repository.IsDuplicatedTitle(title);
+        var product = _repository.FindeById(productId);
+
+        StopIfProductNotFound(product);
+
+        _repository.Remove(product);
+        _unitOfWork.Complete();
+    }
+
+    private  void StopIfProductNotFound(Product product)
+    {
+        if (product is null)
+        {
+            throw new ProuductNotFoundException();
+        }
+    }
+
+    private void StopIfDuplicatedName(string title,int ProductGroupId )
+    {
+        var isDuplicatedName = _repository.IsDuplicatedTitle(title,ProductGroupId);
         if (isDuplicatedName)
         {
             throw new DuplicatedProductNameException();

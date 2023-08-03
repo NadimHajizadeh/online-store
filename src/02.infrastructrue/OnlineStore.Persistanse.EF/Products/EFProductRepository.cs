@@ -18,9 +18,21 @@ public class EFProductRepository : ProductRepository
         _products.Add(product);
     }
 
-    public bool IsDuplicatedTitle(string title)
+    public bool IsDuplicatedTitle(string title, int productGroupId)
     {
         return
-            _products.Any(_ => _.Title.ToLower() == title.ToLower());
+            _products.Any(_ => _.Title.ToLower() == title.ToLower()
+                               && _.ProductGroupId == productGroupId);
+    }
+
+    public void Remove(Product product)
+    {
+        _products.Remove(product);
+    }
+
+    public Product FindeById(int productId)
+    {
+        return
+            _products.Find(productId);
     }
 }
