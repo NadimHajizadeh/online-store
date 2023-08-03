@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "QkR8DlqEtW2jxnvW/Y5YBIJrVyGGDRPXmmeIkfQ4S5BK8+Ymq1Qioz+6Il8ppNhgEgWGAvyVD1Me/EIAs6wV/w==",
+  "dgSpecHash": "DSiPyPI87hbxgbJScBcO/rf9Bc7l0wNp02ajQYH54JNHzwhn5dSkMRVaYBB4ifE5VoonpoHFnukd3pgFIFhnsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\test\\OnlineStore.TestTools\\OnlineStore.TestTools.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nadim\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.18\\microsoft.aspnetcore.cryptography.internal.6.0.18.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.18\\microsoft.aspnetcore.cryptography.keyderivation.6.0.18.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.18\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.18.nupkg.sha512",
@@ -51,7 +50,6 @@
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\moq\\4.18.4\\moq.4.18.4.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -82,7 +80,6 @@
     "C:\\Users\\Nadim\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

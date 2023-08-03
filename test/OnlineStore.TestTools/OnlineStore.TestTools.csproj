@@ -7,27 +7,26 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="6.0.18" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.18" />
-        <PackageReference Include="Moq" Version="4.18.4" />
-        <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.1" />
+        <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="6.0.18"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.18"/>
+        <PackageReference Include="xunit.extensibility.core" Version="2.4.1"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.1"/>
     </ItemGroup>
-   
+
     <ItemGroup>
-        <None Remove="appsettings.json" />
+        <None Remove="appsettings.json"/>
         <Content Include="appsettings.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\02.infrastructrue\OnlineStore.Infrastructure\OnlineStore.Infrastructure.csproj" />
-      <ProjectReference Include="..\..\src\02.infrastructrue\OnlineStore.Persistanse.EF\OnlineStore.Persistanse.EF.csproj" />
+        <ProjectReference Include="..\..\src\02.infrastructrue\OnlineStore.Infrastructure\OnlineStore.Infrastructure.csproj"/>
+        <ProjectReference Include="..\..\src\02.infrastructrue\OnlineStore.Persistanse.EF\OnlineStore.Persistanse.EF.csproj"/>
     </ItemGroup>
 
 </Project>
