@@ -7,7 +7,6 @@ using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductImpotrs.Contracts;
 using OnlineStore.Services.Products;
 using OnlineStore.Services.Products.Contracts;
-
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 // Add services to the container.
