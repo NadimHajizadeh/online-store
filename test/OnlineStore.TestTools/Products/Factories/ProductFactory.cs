@@ -14,6 +14,7 @@ public static class ProductFactory
                 Title = title,
                 LeastCount = 10,
                 Status = ProductStatus.OutOfStock,
+                Count = 0
             };
     }
 }
