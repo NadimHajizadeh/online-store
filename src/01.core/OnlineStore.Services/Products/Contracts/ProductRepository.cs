@@ -9,4 +9,5 @@ public interface ProductRepository
      bool IsDuplicatedTitle(string title,int productGroupId);
      void Remove(Product product);
      Product FindeById(int productId);
+   
 }

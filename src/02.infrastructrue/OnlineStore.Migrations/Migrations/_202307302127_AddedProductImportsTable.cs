@@ -11,7 +11,7 @@ public class _202307302127_AddedProductImportTable : Migration
             .WithColumn("ProductId").AsInt32().NotNullable()
             .WithColumn("CompenyName").AsString(50).NotNullable()
             .WithColumn("Count").AsInt32().NotNullable()
-            .WithColumn("Date").AsDateTime().NotNullable()
+            .WithColumn("Date").AsDateTime2().NotNullable()
             .WithColumn("FactorNumber").AsString(50).NotNullable();
     }
 

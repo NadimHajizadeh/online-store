@@ -17,7 +17,7 @@ internal static class Runner
         CreateDatabase(connectionString);
         var runner = CreateRunner(connectionString, options);
 
-        
+       
         runner.MigrateUp();
     }
 
