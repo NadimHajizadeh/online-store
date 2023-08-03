@@ -3,8 +3,6 @@ using OnlineStore.Entities;
 using OnlineStore.Persistanse.EF;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Exceptions;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Delete;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
 using OnlineStore.TestTools.ProductGroups.Factories;
@@ -111,7 +109,7 @@ public class ProductGroupServiceTest : BusinessUnitTest
     public void Remove_Certain_productGroup_has_product_exception()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product = ProductFactory.Generate(productGroup, "dummy",10);
+        var product = ProductFactory.Generate(productGroup, "dummy");
         DbContext.Save(product);
 
         var expected = () => _sut.Remove(productGroup.Id);

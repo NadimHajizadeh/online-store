@@ -1,6 +1,5 @@
 ﻿
 using OnlineStore.Services.ProductGroups.Contracts.Dto;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 
 namespace OnlineStore.Services.ProductGroups.Contracts;
 

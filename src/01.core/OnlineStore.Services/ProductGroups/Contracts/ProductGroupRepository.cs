@@ -10,4 +10,5 @@ public interface ProductGroupRepository
     void Update(ProductGroup productGroup);
     void Remove(ProductGroup productGroup);
     bool HasProduct(int productGroupId);
+    bool IsExistById(int productGroupId);
 }

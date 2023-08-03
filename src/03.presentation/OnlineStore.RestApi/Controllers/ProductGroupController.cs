@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Contracts.Dto;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 
 namespace OnlineStore.RestApi.Controllers;
 

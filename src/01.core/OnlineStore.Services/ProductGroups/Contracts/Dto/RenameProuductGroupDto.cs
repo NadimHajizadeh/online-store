@@ -1,4 +1,4 @@
-namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
+namespace OnlineStore.Services.ProductGroups.Contracts.Dto;
 
 public class RenameProuductGroupDto
 {
