@@ -47,4 +47,10 @@ public class EFProductGroupRepository : ProductGroupRepository
         return
             _products.Any(_ => _.ProductGroupId == productGroupId);
     }
+
+    public bool IsExistById(int productGroupId)
+    {
+        return
+            _productGroups.Any(_ => _.Id == productGroupId);
+    }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
 using FluentAssertions;
 using OnlineStore.Entities;
-using OnlineStore.Service.Unit.Test.profuctGroups;
 using OnlineStore.Services.ProductGroups.Contracts;
+using OnlineStore.Services.ProductGroups.Exceptions;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
 using OnlineStore.TestTools.ProductGroups.Factories;
@@ -22,7 +22,7 @@ public class DeleteProductGroupFailed : BusinessIntegrationTest
     public void Given()
     {
         _productGroup = ProductGroupFactory.Generate("بهداشتی");
-        var product = ProductFactory.Generate(_productGroup, "شامپو",10);
+        var product = ProductFactory.Generate(_productGroup, "شامپو");
         DbContext.Save(product);
     }
 

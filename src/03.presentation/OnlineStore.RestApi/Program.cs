@@ -4,6 +4,8 @@ using OnlineStore.Persistanse.EF.ProductGroups;
 using OnlineStore.Services.Contracts;
 using OnlineStore.Services.ProductGroups;
 using OnlineStore.Services.ProductGroups.Contracts;
+using OnlineStore.Services.Products;
+using OnlineStore.Services.Products.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -16,8 +18,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EFDataContext>(_ =>
     _.UseSqlServer(configuration.GetConnectionString("sqlServer")));
 builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
-builder.Services.AddScoped<ProductGroupService,ProductGroupAppService>();
-builder.Services.AddScoped<ProductGroupRepository,EFProductGroupRepository>();
+builder.Services.AddScoped<ProductGroupService, ProductGroupAppService>();
+builder.Services.AddScoped<ProductGroupRepository, EFProductGroupRepository>();
+builder.Services.AddScoped<ProductRepository, EFProductRepository>();
+builder.Services.AddScoped<ProductService, ProductAppService>();
 
 
 var app = builder.Build();

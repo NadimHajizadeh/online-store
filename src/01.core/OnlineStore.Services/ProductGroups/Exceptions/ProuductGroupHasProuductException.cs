@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Delete;
+﻿namespace OnlineStore.Services.ProductGroups.Exceptions;
 
 public class ProuductGroupHasProuductException : Exception
 {

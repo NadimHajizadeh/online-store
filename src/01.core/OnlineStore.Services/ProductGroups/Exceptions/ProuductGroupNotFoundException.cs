@@ -1,4 +1,4 @@
-namespace OnlineStore.Service.Unit.Test.profuctGroups;
+namespace OnlineStore.Services.ProductGroups.Exceptions;
 
 public  class ProuductGroupNotFoundException : Exception
 {

@@ -4,15 +4,15 @@ namespace OnlineStore.TestTools.Products.Factories;
 
 public static class ProductFactory
 {
-    public static Product Generate(ProductGroup productGroup, string title ,
-     int leastCount)
+    public static Product Generate(ProductGroup productGroup, string title)
+    
     {
         return
             new Product()
             {
                 ProductGroup = productGroup,
                 Title = title,
-                LeastCount = leastCount,
+                LeastCount = 10,
                 Status = ProductStatus.OutOfStock,
             };
     }

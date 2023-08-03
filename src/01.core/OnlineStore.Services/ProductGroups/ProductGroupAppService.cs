@@ -1,11 +1,8 @@
 ﻿using OnlineStore.Entities;
-using OnlineStore.Service.Unit.Test.profuctGroups;
 using OnlineStore.Services.Contracts;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Contracts.Dto;
 using OnlineStore.Services.ProductGroups.Exceptions;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Delete;
-using OnlineStore.Specs.Test.ProductGroupServiceTest.Update;
 
 namespace OnlineStore.Services.ProductGroups;
 
