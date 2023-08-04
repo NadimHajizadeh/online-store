@@ -7,6 +7,8 @@ using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductImpotrs.Contracts;
 using OnlineStore.Services.Products;
 using OnlineStore.Services.Products.Contracts;
+using OnlineStore.Specs.Test.ProductSaless.Add;
+
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 // Add services to the container.
@@ -25,6 +27,12 @@ builder.Services.AddScoped<ProductService, ProductAppService>();
 builder.Services.AddScoped<ProductImportService, ProductImportAppService>();
 builder.Services
     .AddScoped<ProductImportRepository, EFProductImportRepository>();
+builder.Services.AddScoped<ProductSalesService, ProductSalesAppService>();
+builder.Services.AddScoped<ProductSalesRepository, EFProductSalesRepository>();
+builder.Services.AddScoped<AccountingDocumentRepository, EFAccountingDocumentRepository>();
+
+
+
 
 
 
