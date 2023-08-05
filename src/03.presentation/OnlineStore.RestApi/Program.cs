@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineStore.Persistanse.EF;
 using OnlineStore.Persistanse.EF.ProductGroups;
+using OnlineStore.Services.AcountingDocuments;
 using OnlineStore.Services.Contracts;
 using OnlineStore.Services.ProductGroups;
 using OnlineStore.Services.ProductGroups.Contracts;
@@ -30,6 +31,8 @@ builder.Services
 builder.Services.AddScoped<ProductSalesService, ProductSalesAppService>();
 builder.Services.AddScoped<ProductSalesRepository, EFProductSalesRepository>();
 builder.Services.AddScoped<AccountingDocumentRepository, EFAccountingDocumentRepository>();
+builder.Services.AddScoped<AccountingDocumentService, 
+    AccountingDocumentAppService>();
 
 
 
