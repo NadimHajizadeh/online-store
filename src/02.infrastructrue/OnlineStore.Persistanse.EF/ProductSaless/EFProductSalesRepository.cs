@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
-using OnlineStore.Persistanse.EF;
+using OnlineStore.Services.ProductSaless.Contracts;
+using OnlineStore.Services.ProductSaless.Contracts.Dto;
 
-namespace OnlineStore.Specs.Test.ProductSaless.Add;
+namespace OnlineStore.Persistanse.EF.ProductSaless;
 
 public class EFProductSalesRepository : ProductSalesRepository
 {

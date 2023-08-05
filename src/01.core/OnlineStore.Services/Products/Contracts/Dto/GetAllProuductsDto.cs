@@ -1,4 +1,4 @@
-﻿namespace OnlineStore.Services.Products.Contracts;
+﻿namespace OnlineStore.Services.Products.Contracts.Dto;
 
 public class GetAllProuductsDto
 {

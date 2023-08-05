@@ -6,6 +6,7 @@ using OnlineStore.Services.ProductGroups.Exceptions;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
 using OnlineStore.TestTools.ProductGroups.Factories;
+using OnlineStore.TestTools.Products;
 using OnlineStore.TestTools.Products.Factories;
 
 namespace OnlineStore.Service.Unit.Test.profuctGroups;
@@ -109,7 +110,9 @@ public class ProductGroupServiceTest : BusinessUnitTest
     public void Remove_Certain_productGroup_has_product_exception()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product = ProductFactory.Generate(productGroup, "dummy");
+        var product = new ProductBuilder()
+            .WithProductGroup(productGroup)
+            .Build();
         DbContext.Save(product);
 
         var expected = () => _sut.Remove(productGroup.Id);

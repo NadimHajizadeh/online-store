@@ -1,4 +1,4 @@
-﻿namespace OnlineStore.Specs.Test.ProductSaless.Add;
+﻿namespace OnlineStore.Services.AcountingDocuments.Contracts.Dto;
 
 public class GetAllAccountingDocumentsDto
 {

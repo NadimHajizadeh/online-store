@@ -1,6 +1,6 @@
-﻿using OnlineStore.Specs.Test.ProductSaless.Add;
+﻿using OnlineStore.Services.ProductSaless.Contracts.Dto;
 
-namespace OnlineStore.TestTools.ProductSales;
+namespace OnlineStore.TestTools.ProductSaless;
 
 public class AddProductSalesDtoBuilder
 {

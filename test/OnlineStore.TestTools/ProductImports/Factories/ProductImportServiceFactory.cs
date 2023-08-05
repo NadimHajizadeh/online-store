@@ -1,4 +1,7 @@
 ﻿using OnlineStore.Persistanse.EF;
+using OnlineStore.Persistanse.EF.ProductImports;
+using OnlineStore.Persistanse.EF.Products;
+using OnlineStore.Services.ProductImpotrs;
 using OnlineStore.Services.ProductImpotrs.Contracts;
 using OnlineStore.Services.Products.Contracts;
 

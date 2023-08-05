@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OnlineStore.Specs.Test.ProductImports.Add;
+namespace OnlineStore.Services.ProductImpotrs.Contracts.Dto;
 
 public class AddProductImportDto
 {

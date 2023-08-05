@@ -1,4 +1,6 @@
-﻿namespace OnlineStore.Specs.Test.ProductSaless.Add;
+﻿using OnlineStore.Services.ProductSaless.Contracts.Dto;
+
+namespace OnlineStore.Services.ProductSaless.Contracts;
 
 public interface ProductSalesService
 {

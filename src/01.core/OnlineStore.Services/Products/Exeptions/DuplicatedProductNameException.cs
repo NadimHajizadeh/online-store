@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OnlineStore.Specs.Test.ProductServiceTest.Add;
+﻿namespace OnlineStore.Services.Products.Exeptions;
 
 public class DuplicatedProductNameException : Exception
 {

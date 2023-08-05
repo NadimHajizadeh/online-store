@@ -1,7 +1,11 @@
 ﻿using OnlineStore.Persistanse.EF;
-using OnlineStore.Services.Products.Contracts;
+using OnlineStore.Persistanse.EF.AccountingDocuments;
+using OnlineStore.Persistanse.EF.Products;
+using OnlineStore.Persistanse.EF.ProductSaless;
+using OnlineStore.Services.ProductSaless;
+using OnlineStore.Services.ProductSaless.Contracts;
 
-namespace OnlineStore.Specs.Test.ProductSaless.Add;
+namespace OnlineStore.TestTools.ProductSaless.Factories;
 
 public static class ProductSalesServiceFactory
 {

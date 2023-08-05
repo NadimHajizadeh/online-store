@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
-using OnlineStore.Persistanse.EF;
-using OnlineStore.Specs.Test.ProductImports.Add;
+using OnlineStore.Services.ProductImpotrs.Contracts;
+using OnlineStore.Services.ProductImpotrs.Contracts.Dto;
 
-namespace OnlineStore.Services.ProductImpotrs.Contracts;
+namespace OnlineStore.Persistanse.EF.ProductImports;
 
 public class EFProductImportRepository : ProductImportRepository
 {

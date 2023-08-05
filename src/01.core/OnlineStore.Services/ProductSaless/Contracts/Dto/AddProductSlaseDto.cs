@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OnlineStore.Specs.Test.ProductSaless.Add;
+namespace OnlineStore.Services.ProductSaless.Contracts.Dto;
 
 public class AddProductSlaseDto
 {

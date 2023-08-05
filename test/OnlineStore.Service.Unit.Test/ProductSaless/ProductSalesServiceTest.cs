@@ -1,12 +1,15 @@
 ﻿using FluentAssertions;
 using OnlineStore.Entities;
 using OnlineStore.Service.Unit.Test.Products;
-using OnlineStore.Specs.Test.ProductSaless.Add;
+using OnlineStore.Services.Products.Exeptions;
+using OnlineStore.Services.ProductSaless.Contracts;
+using OnlineStore.Services.ProductSaless.Exceptions;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
 using OnlineStore.TestTools.ProductGroups.Factories;
 using OnlineStore.TestTools.Products;
-using OnlineStore.TestTools.ProductSales;
+using OnlineStore.TestTools.ProductSaless;
+using OnlineStore.TestTools.ProductSaless.Factories;
 
 namespace OnlineStore.Service.Unit.Test.ProductSaless;
 

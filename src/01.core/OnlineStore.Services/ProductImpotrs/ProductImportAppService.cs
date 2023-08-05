@@ -1,10 +1,11 @@
 ﻿using OnlineStore.Entities;
-using OnlineStore.Service.Unit.Test.Products;
 using OnlineStore.Services.Contracts;
+using OnlineStore.Services.ProductImpotrs.Contracts;
+using OnlineStore.Services.ProductImpotrs.Contracts.Dto;
 using OnlineStore.Services.Products.Contracts;
-using OnlineStore.Specs.Test.ProductImports.Add;
+using OnlineStore.Services.Products.Exeptions;
 
-namespace OnlineStore.Services.ProductImpotrs.Contracts;
+namespace OnlineStore.Services.ProductImpotrs;
 
 public class ProductImportAppService : ProductImportService
 {

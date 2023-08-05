@@ -1,5 +1,5 @@
 ﻿using OnlineStore.Entities;
-using OnlineStore.Specs.Test.ProductImports.Add;
+using OnlineStore.Services.ProductImpotrs.Contracts.Dto;
 
 namespace OnlineStore.Services.ProductImpotrs.Contracts;
 

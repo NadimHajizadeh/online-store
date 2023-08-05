@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnlineStore.Specs.Test.ProductSaless.Add;
+using OnlineStore.Services.AcountingDocuments.Contracts;
+using OnlineStore.Services.AcountingDocuments.Contracts.Dto;
 
 namespace OnlineStore.RestApi.Controllers;
 
@@ -14,9 +15,10 @@ public class AccountingDocumentController : Controller
     }
 
     [HttpGet]
-    public List<GetAllAccountingDocumentsDto> GetAll()
+    public List<GetAllAccountingDocumentsDto> GetAll
+        ([FromQuery] AccountingDucomentsSerchByDto dto)
     {
         return
-            _service.GetAll();
+            _service.GetAll(dto);
     }
 }

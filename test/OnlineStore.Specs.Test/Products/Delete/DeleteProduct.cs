@@ -1,14 +1,14 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
 using OnlineStore.TestTools.ProductGroups.Factories;
+using OnlineStore.TestTools.Products;
 using OnlineStore.TestTools.Products.Factories;
 
-namespace OnlineStore.Specs.Test.ProductServiceTest.Delete;
+namespace OnlineStore.Specs.Test.Products.Delete;
 
 [Scenario("حذف کالا")]
 public class DeleteProduct : BusinessIntegrationTest
@@ -22,7 +22,9 @@ public class DeleteProduct : BusinessIntegrationTest
     public void Given()
     {
         _productGroup = ProductGroupFactory.Generate("بهداشتی");
-        _product = ProductFactory.Generate(_productGroup, "شامپو");
+        _product = new ProductBuilder().WithProductGroup(_productGroup)
+            .WithTitle("شامپو")
+            .Build();
         DbContext.Save(_product);
     }
 

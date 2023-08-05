@@ -2,7 +2,7 @@
 using OnlineStore.Entities;
 using OnlineStore.Service.Unit.Test.Products;
 using OnlineStore.Services.ProductImpotrs.Contracts;
-using OnlineStore.Specs.Test.ProductImports.Add;
+using OnlineStore.Services.Products.Exeptions;
 using OnlineStore.TestTools;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
@@ -29,7 +29,9 @@ public class ProductImportServiceTest : BusinessUnitTest
     public void Define_Certain_add_a_productImport()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product = ProductFactory.Generate(productGroup, "dummy");
+        var product =  new ProductBuilder()
+            .WithProductGroup(productGroup)
+            .Build();
         DbContext.Save(product);
         var dto = new AddProductImportDtoBuilder()
             .WithProductId(product.Id)
@@ -52,7 +54,9 @@ public class ProductImportServiceTest : BusinessUnitTest
     public void Define_Certain_add_a_productImport_to_get_ReadyToOrde_status()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product = ProductFactory.Generate(productGroup, "dummy");
+        var product =  new ProductBuilder()
+            .WithProductGroup(productGroup)
+            .Build();
         DbContext.Save(product);
         var dto = new AddProductImportDtoBuilder()
             .WithProductId(product.Id)

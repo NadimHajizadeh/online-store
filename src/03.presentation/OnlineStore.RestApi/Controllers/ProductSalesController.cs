@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnlineStore.Specs.Test.ProductSaless.Add;
+using OnlineStore.Services.ProductSaless.Contracts;
+using OnlineStore.Services.ProductSaless.Contracts.Dto;
 
 namespace OnlineStore.RestApi.Controllers;
 
