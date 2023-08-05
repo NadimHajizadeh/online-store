@@ -20,4 +20,11 @@ public class ProductImportController : Controller
     {
         _service.Define(dto);
     }
+
+    [HttpGet]
+    public List<GetallProductImportsDto> GetAll()
+    {
+        return
+            _service.GetAll();
+    }
 }

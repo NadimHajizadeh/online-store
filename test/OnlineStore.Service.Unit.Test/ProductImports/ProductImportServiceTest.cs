@@ -9,6 +9,7 @@ using OnlineStore.TestTools.DataBaseConfig.Unit;
 using OnlineStore.TestTools.ProductGroups.Factories;
 using OnlineStore.TestTools.ProductImports;
 using OnlineStore.TestTools.ProductImports.Factories;
+using OnlineStore.TestTools.Products;
 using OnlineStore.TestTools.Products.Factories;
 
 namespace OnlineStore.Service.Unit.Test.ProductImports;
@@ -84,5 +85,34 @@ public class ProductImportServiceTest : BusinessUnitTest
         var excepted = () => _sut.Define(dto);
 
         excepted.Should().ThrowExactly<ProuductNotFoundException>();
+    }
+
+    [Fact]
+    public void GetAll_Certain_get_all()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        var product = new ProductBuilder()
+            .WithProductGroup(productGroup)
+            .WithStatus(ProductStatus.Available)
+            .WithCount(100)
+            .Build();
+        DbContext.Save(product);
+        var productImport = new ProductImport()
+        {
+            Count = 20,
+            FactorNumber = "dummy_factor_number",
+            CompenyName = "dummyCo",
+            Date = DateTime.Now,
+            ProductId = product.Id,
+        };
+        DbContext.Save(productImport);
+
+        var expected = _sut.GetAll().Single();
+
+        expected.Count.Should().Be(productImport.Count);
+        expected.CompenyName.Should().Be(productImport.CompenyName);
+        expected.Date.Should().Be(productImport.Date);
+        expected.FactorNumber.Should().Be(productImport.FactorNumber);
+        expected.ProductName.Should().Be(product.Title);
     }
 }
