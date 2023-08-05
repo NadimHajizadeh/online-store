@@ -1,8 +1,10 @@
-﻿namespace OnlineStore.Services.Products.Contracts.Dto;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OnlineStore.Services.Products.Contracts.Dto;
 
 public class AddProductDto
 {
-    public string Title { get; set; }
-    public int ProductGroupId { get; set; }
-    public int LeastCount { get; set; }
+    [Required] [MaxLength(50)] public string Title { get; set; }
+    [Required] public int ProductGroupId { get; set; }
+    [Required] [Range(1, Int32.MaxValue)] public int LeastCount { get; set; }
 }

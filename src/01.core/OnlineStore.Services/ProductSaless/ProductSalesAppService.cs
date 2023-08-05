@@ -32,7 +32,7 @@ public class ProductSalesAppService : ProductSalesService
     {
         var product = _productRepository.FindeById(dto.ProductId);
         StopIfProductNotFound(product);
-        StopIfOutOfStock(product);
+        StopIfOutOfStock(product, dto.Count);
 
 
         var productSales = new ProductSales()
@@ -58,15 +58,20 @@ public class ProductSalesAppService : ProductSalesService
         _unitOfWork.Complete();
     }
 
-    private  void StopIfOutOfStock(Product product)
+    private void StopIfOutOfStock(Product product, int count)
     {
         if (product.Status == ProductStatus.OutOfStock)
         {
             throw new OutofStockException();
         }
+
+        if (product.Count < count)
+        {
+            throw new OutofStockException();
+        }
     }
 
-    private  void StopIfProductNotFound(Product product)
+    private void StopIfProductNotFound(Product product)
     {
         if (product is null)
         {

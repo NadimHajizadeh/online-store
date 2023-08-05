@@ -43,5 +43,6 @@
     &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.ProductSaless.ProductSalesServiceTest.Define_Certain_productNotFound_exception&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.ProductSaless.ProductSalesServiceTest.Define_Certain_outOfStock_exception&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::B6191F1B-89A2-4810-994C-BEABADFBB54E::net6.0::OnlineStore.Specs.Test.ProductSaless.Add.DefineProductSalesFailed&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.ProductSaless.ProductSalesServiceTest.Define_Certain_outOfStock_exception2&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

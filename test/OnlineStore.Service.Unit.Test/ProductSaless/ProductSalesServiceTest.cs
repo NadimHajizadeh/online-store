@@ -88,4 +88,23 @@ public class ProductSalesServiceTest : BusinessUnitTest
 
        expected.Should().ThrowExactly<OutofStockException>();
     }
+    
+    [Fact]
+    public void Define_Certain_outOfStock_exception2()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        var product = new ProductBuilder()
+            .WithCount(10)
+            .WithProductGroup(productGroup)
+            .Build();
+        DbContext.Save(product);
+        var dto = new AddProductSalesDtoBuilder()
+            .WithCount(11)
+            .WithProductId(product.Id)
+            .Build();
+
+        var expected =()=> _sut.Define(dto);
+
+        expected.Should().ThrowExactly<OutofStockException>();
+    }
 }
