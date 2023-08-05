@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Linq;
 using FluentAssertions;
+using Moq;
 using OnlineStore.Entities;
+using OnlineStore.Services.Shared;
 using OnlineStore.TestTools;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
@@ -18,7 +20,8 @@ public class
     DefineProductImportToGetReadyToOrderStatus : BusinessIntegrationTest
 {
     private Product _product;
-    private DateTime _datetime;
+    private Mock<DateTimeService> _datetimeMock;
+    private DateTime _dateTime;
 
 
     [Given("یک گروه با نام بهداشتی در فهرست گروه ها وجود دارد")]
@@ -26,6 +29,7 @@ public class
          " وضعیت ناموجود  و حداقل موجودی ۱۰ در گروه بهداشتی وجود دارد ")]
     public void Given()
     {
+        _datetimeMock = new Mock<DateTimeService>();
         var productGroup = ProductGroupFactory.Generate("بهداشتی");
         _product =  new ProductBuilder().WithProductGroup(productGroup)
             .WithTitle("شامپو")
@@ -45,11 +49,13 @@ public class
             .WithFactorNumber("۱۲۳a")
             .Build();
 
-        _datetime = DatetimeFactory.Generate();
-
+        _dateTime = DatetimeFactory.Generate();
+        
+        _datetimeMock.Setup(_ => _.GetTime()).Returns(_dateTime);
         var sut =
-            ProductImportServiceFactory.Generate(SetupContexts,
-                _datetime);
+            ProductImportServiceFactory.Generate(
+                SetupContexts,
+                _datetimeMock.Object);
         sut.Define(dto);
     }
 
@@ -72,7 +78,7 @@ public class
         actual.ProductId.Should().Be(_product.Id);
         actual.FactorNumber.Should().Be("۱۲۳a");
         actual.CompenyName.Should().Be("فپکو");
-        actual.Date.Should().Be(_datetime);
+        actual.Date.Should().Be(_dateTime);
     }
 
     [Fact]

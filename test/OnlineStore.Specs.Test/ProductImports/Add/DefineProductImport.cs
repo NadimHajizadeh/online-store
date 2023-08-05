@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Linq;
 using FluentAssertions;
+using Moq;
 using OnlineStore.Entities;
+using OnlineStore.Services.Shared;
 using OnlineStore.TestTools;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
@@ -9,7 +11,7 @@ using OnlineStore.TestTools.ProductGroups.Factories;
 using OnlineStore.TestTools.ProductImports;
 using OnlineStore.TestTools.ProductImports.Factories;
 using OnlineStore.TestTools.Products;
-using OnlineStore.TestTools.Products.Factories;
+
 
 namespace OnlineStore.Specs.Test.ProductImports.Add;
 
@@ -17,7 +19,8 @@ namespace OnlineStore.Specs.Test.ProductImports.Add;
 public class DefineProductImport : BusinessIntegrationTest
 {
     private Product _product;
-    private DateTime _datetime;
+    private Mock<DateTimeService> _datetimeMock;
+    private DateTime _dateTime;
 
 
     [Given("یک گروه با نام بهداشتی در فهرست گروه ها وجود دارد")]
@@ -26,11 +29,11 @@ public class DefineProductImport : BusinessIntegrationTest
     public void Given()
     {
         var productGroup = ProductGroupFactory.Generate("بهداشتی");
-
+        _datetimeMock = new Mock<DateTimeService>();
         _product = new ProductBuilder().WithProductGroup(productGroup)
             .WithTitle("شامپو")
             .Build();
-        
+
         DbContext.Save(_product);
     }
 
@@ -45,12 +48,12 @@ public class DefineProductImport : BusinessIntegrationTest
             .WithCompenyName("فپکو")
             .WithFactorNumber("۱۲۳a")
             .Build();
-
-        _datetime = DatetimeFactory.Generate();
-
+        _dateTime = DatetimeFactory.Generate();
+        _datetimeMock.Setup(_ => _.GetTime()).Returns(_dateTime);
         var sut =
-            ProductImportServiceFactory.Generate(SetupContexts,
-                _datetime);
+            ProductImportServiceFactory.Generate(
+                SetupContexts,
+                _datetimeMock.Object);
         sut.Define(dto);
     }
 
@@ -73,7 +76,7 @@ public class DefineProductImport : BusinessIntegrationTest
         actual.ProductId.Should().Be(_product.Id);
         actual.FactorNumber.Should().Be("۱۲۳a");
         actual.CompenyName.Should().Be("فپکو");
-        actual.Date.Should().Be(_datetime);
+        actual.Date.Should().Be(_dateTime);
     }
 
     [Fact]

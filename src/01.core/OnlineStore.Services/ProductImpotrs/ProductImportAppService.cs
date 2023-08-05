@@ -4,6 +4,7 @@ using OnlineStore.Services.ProductImpotrs.Contracts;
 using OnlineStore.Services.ProductImpotrs.Contracts.Dto;
 using OnlineStore.Services.Products.Contracts;
 using OnlineStore.Services.Products.Exeptions;
+using OnlineStore.Services.Shared;
 
 namespace OnlineStore.Services.ProductImpotrs;
 
@@ -12,19 +13,19 @@ public class ProductImportAppService : ProductImportService
     private readonly UnitOfWork _unitOfWork;
     private readonly ProductImportRepository _repository;
     private readonly ProductRepository _productRepository;
-    private readonly DateTime _date;
+    private readonly DateTimeService _dateTimeService;
 
 
     public ProductImportAppService(UnitOfWork unitOfWork,
         ProductImportRepository repository,
         ProductRepository productRepository,
-        DateTime? date = null
+        DateTimeService dateTimeService
     )
     {
         _unitOfWork = unitOfWork;
         _repository = repository;
         _productRepository = productRepository;
-        _date = date ?? DateTime.Now;
+        _dateTimeService = dateTimeService;
     }
 
     public void Define(AddProductImportDto dto)
@@ -38,7 +39,7 @@ public class ProductImportAppService : ProductImportService
             ProductId = dto.ProductId,
             CompenyName = dto.CompenyName,
             FactorNumber = dto.FactorNumber,
-            Date = _date
+            Date = _dateTimeService.GetTime()
         };
 
         UpdateProduct(product, dto.Count);
@@ -52,7 +53,7 @@ public class ProductImportAppService : ProductImportService
             _repository.GetAll();
     }
 
-    private  void UpdateProduct(Product product, int count)
+    private void UpdateProduct(Product product, int count)
     {
         product.Count += count;
         var status = ProductStatus.ReadyToOrder;
@@ -65,7 +66,7 @@ public class ProductImportAppService : ProductImportService
         product.Status = status;
     }
 
-    private  void StopIfProductNotFound(Product product)
+    private void StopIfProductNotFound(Product product)
     {
         if (product is null)
         {

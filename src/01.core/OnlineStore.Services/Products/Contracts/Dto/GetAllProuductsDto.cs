@@ -1,4 +1,6 @@
-﻿namespace OnlineStore.Services.Products.Contracts.Dto;
+﻿using OnlineStore.Entities;
+
+namespace OnlineStore.Services.Products.Contracts.Dto;
 
 public class GetAllProuductsDto
 {
@@ -7,5 +9,5 @@ public class GetAllProuductsDto
     public string GroupName { get; set; }
     public int Count { get; set; }
     public int LeastCount { get; set; }
-    public string Status { get; set; }
+    public ProductStatus Status { get; set; }
 }

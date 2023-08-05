@@ -45,7 +45,7 @@ public class EFProductRepository : ProductRepository
             ProductCode = _.Id,
             ProductTitle = _.Title,
             GroupName = _.ProductGroup.Name,
-            Status = _.Status.ToString(),
+            Status = _.Status,
             Count = _.Count,
             LeastCount = _.LeastCount
         });
@@ -54,11 +54,14 @@ public class EFProductRepository : ProductRepository
 
         result = SearchByGroupName(result, dto.GroupName);
 
+        if (dto.Status != null)
+        {
+            result = result.Where(_ => _.Status == dto.Status);
+        }
+
         result = OrderByTitle(result, orderBy);
-        
+
         result = OrderByGroupName(result, orderBy);
-        
-         
 
 
         return result.ToList();

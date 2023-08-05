@@ -16,6 +16,7 @@ using OnlineStore.Services.Products;
 using OnlineStore.Services.Products.Contracts;
 using OnlineStore.Services.ProductSaless;
 using OnlineStore.Services.ProductSaless.Contracts;
+using OnlineStore.Services.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -37,14 +38,11 @@ builder.Services
     .AddScoped<ProductImportRepository, EFProductImportRepository>();
 builder.Services.AddScoped<ProductSalesService, ProductSalesAppService>();
 builder.Services.AddScoped<ProductSalesRepository, EFProductSalesRepository>();
-builder.Services.AddScoped<AccountingDocumentRepository, EFAccountingDocumentRepository>();
-builder.Services.AddScoped<AccountingDocumentService, 
+builder.Services
+    .AddScoped<AccountingDocumentRepository, EFAccountingDocumentRepository>();
+builder.Services.AddScoped<AccountingDocumentService,
     AccountingDocumentAppService>();
-
-
-
-
-
+builder.Services.AddScoped<DateTimeService, DateTimeAppService>();
 
 
 var app = builder.Build();
