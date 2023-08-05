@@ -1,4 +1,4 @@
-﻿namespace OnlineStore.Service.Unit.Test.Products;
+﻿namespace OnlineStore.Services.Products.Exeptions;
 
 public class ProuductNotFoundException : Exception
 {

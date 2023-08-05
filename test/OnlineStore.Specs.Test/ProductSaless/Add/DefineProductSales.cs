@@ -5,7 +5,8 @@ using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
 using OnlineStore.TestTools.ProductGroups.Factories;
 using OnlineStore.TestTools.Products;
-using OnlineStore.TestTools.ProductSales;
+using OnlineStore.TestTools.ProductSaless;
+using OnlineStore.TestTools.ProductSaless.Factories;
 
 
 namespace OnlineStore.Specs.Test.ProductSaless.Add;

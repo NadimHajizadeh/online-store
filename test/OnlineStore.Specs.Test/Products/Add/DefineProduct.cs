@@ -1,13 +1,13 @@
 ﻿using System.Linq;
 using FluentAssertions;
 using OnlineStore.Entities;
-using OnlineStore.Services.Products.Contracts.Dto;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
 using OnlineStore.TestTools.ProductGroups.Factories;
+using OnlineStore.TestTools.Products;
 using OnlineStore.TestTools.Products.Factories;
 
-namespace OnlineStore.Specs.Test.ProductServiceTest.Add;
+namespace OnlineStore.Specs.Test.Products.Add;
 
 [Scenario("تعریف کالا ")]
 public class DefineProduct : BusinessIntegrationTest
@@ -22,7 +22,9 @@ public class DefineProduct : BusinessIntegrationTest
         _asbabBasiProductGroup = ProductGroupFactory.Generate("اسباب بازی");
         DbContext.Save(_asbabBasiProductGroup);
         var labaniatProductGroup = ProductGroupFactory.Generate("لبنیات");
-        var product = ProductFactory.Generate(labaniatProductGroup, "شیر");
+        var product =  new ProductBuilder().WithProductGroup(labaniatProductGroup)
+            .WithTitle("شیر")
+            .Build();
         DbContext.Save(product);
     }
 

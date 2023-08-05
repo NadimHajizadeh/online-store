@@ -1,4 +1,4 @@
-﻿namespace OnlineStore.Specs.Test.ProductSaless.Add;
+﻿namespace OnlineStore.Services.ProductSaless.Exceptions;
 
 public class OutofStockException : Exception
 {

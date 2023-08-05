@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
-using OnlineStore.Persistanse.EF;
+using OnlineStore.Services.Products.Contracts;
 using OnlineStore.Services.Products.Contracts.Dto;
 
-namespace OnlineStore.Services.Products.Contracts;
+namespace OnlineStore.Persistanse.EF.Products;
 
 public class EFProductRepository : ProductRepository
 {

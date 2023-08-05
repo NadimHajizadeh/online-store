@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OnlineStore.Services.ProductImpotrs.Contracts;
-using OnlineStore.Specs.Test.ProductImports.Add;
+using OnlineStore.Services.ProductImpotrs.Contracts.Dto;
 
 namespace OnlineStore.RestApi.Controllers;
 

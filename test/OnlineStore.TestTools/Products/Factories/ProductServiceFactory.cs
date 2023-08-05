@@ -1,5 +1,6 @@
 ﻿using OnlineStore.Persistanse.EF;
 using OnlineStore.Persistanse.EF.ProductGroups;
+using OnlineStore.Persistanse.EF.Products;
 using OnlineStore.Services.Products;
 using OnlineStore.Services.Products.Contracts;
 

@@ -1,6 +1,6 @@
 ﻿using OnlineStore.Entities;
 
-namespace OnlineStore.Specs.Test.ProductSaless.Add;
+namespace OnlineStore.TestTools.ProductSaless.Factories;
 
 public static class ProductSalesFactory
 {

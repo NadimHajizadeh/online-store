@@ -1,9 +1,13 @@
 ﻿using OnlineStore.Entities;
-using OnlineStore.Service.Unit.Test.Products;
+using OnlineStore.Services.AcountingDocuments.Contracts;
 using OnlineStore.Services.Contracts;
 using OnlineStore.Services.Products.Contracts;
+using OnlineStore.Services.Products.Exeptions;
+using OnlineStore.Services.ProductSaless.Contracts;
+using OnlineStore.Services.ProductSaless.Contracts.Dto;
+using OnlineStore.Services.ProductSaless.Exceptions;
 
-namespace OnlineStore.Specs.Test.ProductSaless.Add;
+namespace OnlineStore.Services.ProductSaless;
 
 public class ProductSalesAppService : ProductSalesService
 {

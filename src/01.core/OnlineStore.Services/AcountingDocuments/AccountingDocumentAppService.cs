@@ -1,4 +1,5 @@
-﻿using OnlineStore.Specs.Test.ProductSaless.Add;
+﻿using OnlineStore.Services.AcountingDocuments.Contracts;
+using OnlineStore.Services.AcountingDocuments.Contracts.Dto;
 
 namespace OnlineStore.Services.AcountingDocuments;
 
@@ -10,9 +11,10 @@ public class AccountingDocumentAppService : AccountingDocumentService
     {
         _repository = repository;
     }
-    public List<GetAllAccountingDocumentsDto> GetAll()
+    public List<GetAllAccountingDocumentsDto> GetAll(
+        AccountingDucomentsSerchByDto? dto )
     {
         return 
-        _repository.GetAll();
+        _repository.GetAll(dto);
     }
 }

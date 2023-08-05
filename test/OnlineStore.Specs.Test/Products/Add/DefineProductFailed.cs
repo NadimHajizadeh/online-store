@@ -1,14 +1,14 @@
 ﻿using System;
 using FluentAssertions;
 using OnlineStore.Entities;
-using OnlineStore.Services.ProductGroups.Exceptions;
-using OnlineStore.Services.Products.Contracts.Dto;
+using OnlineStore.Services.Products.Exeptions;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
 using OnlineStore.TestTools.ProductGroups.Factories;
+using OnlineStore.TestTools.Products;
 using OnlineStore.TestTools.Products.Factories;
 
-namespace OnlineStore.Specs.Test.ProductServiceTest.Add;
+namespace OnlineStore.Specs.Test.Products.Add;
 
 [Scenario("تعریف کالا با عنوان تکراری در یک گروه")]
 public class DefineProductFailed : BusinessIntegrationTest
@@ -21,7 +21,9 @@ public class DefineProductFailed : BusinessIntegrationTest
     public void Given()
     {
         _propductGroup = ProductGroupFactory.Generate("بهداشتی");
-        var product = ProductFactory.Generate(_propductGroup, "شامپو");
+        var product =  new ProductBuilder().WithProductGroup(_propductGroup)
+            .WithTitle("شامپو")
+            .Build();
         DbContext.Save(product);
     }
 

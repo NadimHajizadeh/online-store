@@ -1,13 +1,21 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineStore.Persistanse.EF;
+using OnlineStore.Persistanse.EF.AccountingDocuments;
 using OnlineStore.Persistanse.EF.ProductGroups;
+using OnlineStore.Persistanse.EF.ProductImports;
+using OnlineStore.Persistanse.EF.Products;
+using OnlineStore.Persistanse.EF.ProductSaless;
+using OnlineStore.Services.AcountingDocuments;
+using OnlineStore.Services.AcountingDocuments.Contracts;
 using OnlineStore.Services.Contracts;
 using OnlineStore.Services.ProductGroups;
 using OnlineStore.Services.ProductGroups.Contracts;
+using OnlineStore.Services.ProductImpotrs;
 using OnlineStore.Services.ProductImpotrs.Contracts;
 using OnlineStore.Services.Products;
 using OnlineStore.Services.Products.Contracts;
-using OnlineStore.Specs.Test.ProductSaless.Add;
+using OnlineStore.Services.ProductSaless;
+using OnlineStore.Services.ProductSaless.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -30,6 +38,8 @@ builder.Services
 builder.Services.AddScoped<ProductSalesService, ProductSalesAppService>();
 builder.Services.AddScoped<ProductSalesRepository, EFProductSalesRepository>();
 builder.Services.AddScoped<AccountingDocumentRepository, EFAccountingDocumentRepository>();
+builder.Services.AddScoped<AccountingDocumentService, 
+    AccountingDocumentAppService>();
 
 
 

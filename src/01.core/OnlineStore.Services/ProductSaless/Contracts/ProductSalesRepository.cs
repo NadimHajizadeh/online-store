@@ -1,6 +1,7 @@
 ﻿using OnlineStore.Entities;
+using OnlineStore.Services.ProductSaless.Contracts.Dto;
 
-namespace OnlineStore.Specs.Test.ProductSaless.Add;
+namespace OnlineStore.Services.ProductSaless.Contracts;
 
 public interface ProductSalesRepository
 {

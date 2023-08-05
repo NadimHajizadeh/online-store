@@ -1,11 +1,10 @@
 ﻿using OnlineStore.Entities;
-using OnlineStore.Service.Unit.Test.Products;
 using OnlineStore.Services.Contracts;
 using OnlineStore.Services.ProductGroups.Contracts;
 using OnlineStore.Services.ProductGroups.Exceptions;
 using OnlineStore.Services.Products.Contracts;
 using OnlineStore.Services.Products.Contracts.Dto;
-using OnlineStore.Specs.Test.ProductServiceTest.Add;
+using OnlineStore.Services.Products.Exeptions;
 
 namespace OnlineStore.Services.Products;
 

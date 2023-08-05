@@ -4,7 +4,7 @@ using OnlineStore.Entities;
 using OnlineStore.Services.ProductGroups.Exceptions;
 using OnlineStore.Services.Products.Contracts;
 using OnlineStore.Services.Products.Contracts.Dto;
-using OnlineStore.Specs.Test.ProductServiceTest.Add;
+using OnlineStore.Services.Products.Exeptions;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
 using OnlineStore.TestTools.ProductGroups.Factories;
@@ -56,7 +56,9 @@ public class ProductServiceTest : BusinessUnitTest
     public void Define_Certain_duplicated_Product_name_exception()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product = ProductFactory.Generate(productGroup, "dummy");
+        var product =  new ProductBuilder()
+            .WithProductGroup(productGroup)
+            .Build();
         DbContext.Save(product);
         var dto =
             AddProductDtoFactory.Generate(product.Title, productGroup.Id, 10);
@@ -70,7 +72,9 @@ public class ProductServiceTest : BusinessUnitTest
     public void Remove_Certain_delete_a_product()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product = ProductFactory.Generate(productGroup, "dummy");
+        var product =  new ProductBuilder()
+            .WithProductGroup(productGroup)
+            .Build();
         DbContext.Save(product);
 
         _sut.Remove(product.Id);

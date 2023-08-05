@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
-using OnlineStore.Persistanse.EF;
+using OnlineStore.Services.AcountingDocuments.Contracts;
+using OnlineStore.Services.AcountingDocuments.Contracts.Dto;
 
-namespace OnlineStore.Specs.Test.ProductSaless.Add;
+namespace OnlineStore.Persistanse.EF.AccountingDocuments;
 
 public class EFAccountingDocumentRepository : AccountingDocumentRepository
 {
@@ -18,9 +19,10 @@ public class EFAccountingDocumentRepository : AccountingDocumentRepository
         _accountingDucoments.Add(accountingDocument);
     }
 
-    public List<GetAllAccountingDocumentsDto> GetAll()
+    public List<GetAllAccountingDocumentsDto> GetAll(
+        AccountingDucomentsSerchByDto? dto)
     {
-        return
+        var result =
             _accountingDucoments.Select(_ => new GetAllAccountingDocumentsDto()
             {
                 DocumentNumber = _.DocumentNumber,
@@ -28,6 +30,69 @@ public class EFAccountingDocumentRepository : AccountingDocumentRepository
                 CustomerName = _.ProductSales.CustomerName,
                 TotalPrice = _.TotalPrice,
                 SalesFactorNumber = _.SalesFactorNumber,
-            }).ToList();
+            });
+
+        result = SearchOnDocumentNumber(result, dto);
+
+        result = SearchOnFactorNumber(result, dto);
+
+        result = SearchOnFromDate(result, dto);
+
+        result = SearchOnTillDate(dto, result);
+
+
+        return result.ToList();
+    }
+
+    private IQueryable<GetAllAccountingDocumentsDto> SearchOnTillDate(
+        AccountingDucomentsSerchByDto? dto,
+        IQueryable<GetAllAccountingDocumentsDto> result)
+    {
+        if (dto.TillDate != null)
+        {
+            result =
+                result.Where(_ => _.date <= dto.TillDate);
+        }
+
+        return result;
+    }
+
+    private IQueryable<GetAllAccountingDocumentsDto> SearchOnFromDate(
+        IQueryable<GetAllAccountingDocumentsDto> result,
+        AccountingDucomentsSerchByDto? dto)
+    {
+        if (dto.FromDate != null)
+        {
+            result =
+                result.Where(_ => _.date >= dto.FromDate);
+        }
+
+        return result;
+    }
+
+    private IQueryable<GetAllAccountingDocumentsDto> SearchOnFactorNumber(
+        IQueryable<GetAllAccountingDocumentsDto> result,
+        AccountingDucomentsSerchByDto? dto)
+    {
+        if (dto.FactorNumber != null)
+        {
+            result =
+                result.Where(_ => _.SalesFactorNumber == dto.FactorNumber);
+        }
+
+        return result;
+    }
+
+    private IQueryable<GetAllAccountingDocumentsDto> SearchOnDocumentNumber(
+        IQueryable<GetAllAccountingDocumentsDto> result,
+        AccountingDucomentsSerchByDto? dto)
+    {
+        if (dto.DocumentNumber != null)
+        {
+            result = result.Where(_ => _.DocumentNumber == dto
+                .DocumentNumber);
+        }
+
+        return result;
     }
 }

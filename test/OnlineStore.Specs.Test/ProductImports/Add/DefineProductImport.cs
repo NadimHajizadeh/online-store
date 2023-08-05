@@ -8,6 +8,7 @@ using OnlineStore.TestTools.DataBaseConfig.Integration;
 using OnlineStore.TestTools.ProductGroups.Factories;
 using OnlineStore.TestTools.ProductImports;
 using OnlineStore.TestTools.ProductImports.Factories;
+using OnlineStore.TestTools.Products;
 using OnlineStore.TestTools.Products.Factories;
 
 namespace OnlineStore.Specs.Test.ProductImports.Add;
@@ -25,7 +26,11 @@ public class DefineProductImport : BusinessIntegrationTest
     public void Given()
     {
         var productGroup = ProductGroupFactory.Generate("بهداشتی");
-        _product = ProductFactory.Generate(productGroup, "شامپو");
+
+        _product = new ProductBuilder().WithProductGroup(productGroup)
+            .WithTitle("شامپو")
+            .Build();
+        
         DbContext.Save(_product);
     }
 

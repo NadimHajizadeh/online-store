@@ -6,6 +6,7 @@ using OnlineStore.Services.ProductGroups.Exceptions;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Integration;
 using OnlineStore.TestTools.ProductGroups.Factories;
+using OnlineStore.TestTools.Products;
 using OnlineStore.TestTools.Products.Factories;
 
 namespace OnlineStore.Specs.Test.ProductGroupServiceTest.Delete;
@@ -22,7 +23,9 @@ public class DeleteProductGroupFailed : BusinessIntegrationTest
     public void Given()
     {
         _productGroup = ProductGroupFactory.Generate("بهداشتی");
-        var product = ProductFactory.Generate(_productGroup, "شامپو");
+        var product =  new ProductBuilder().WithProductGroup(_productGroup)
+            .WithTitle("شامپو")
+            .Build();
         DbContext.Save(product);
     }
 
