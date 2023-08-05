@@ -54,10 +54,7 @@ public class EFProductRepository : ProductRepository
 
         result = SearchByGroupName(result, dto.GroupName);
 
-        if (dto.Status != null)
-        {
-            result = result.Where(_ => _.Status == dto.Status);
-        }
+        result = SearchByStatus(result, dto);
 
         result = OrderByTitle(result, orderBy);
 
@@ -65,6 +62,16 @@ public class EFProductRepository : ProductRepository
 
 
         return result.ToList();
+    }
+
+    private static IQueryable<GetAllProuductsDto> SearchByStatus(IQueryable<GetAllProuductsDto> result, SearchOnDto dto)
+    {
+        if (dto.Status != null)
+        {
+            result = result.Where(_ => _.Status == dto.Status);
+        }
+
+        return result;
     }
 
     private static IQueryable<GetAllProuductsDto> OrderByGroupName

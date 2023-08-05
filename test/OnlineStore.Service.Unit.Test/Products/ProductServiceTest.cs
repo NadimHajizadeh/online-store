@@ -56,7 +56,7 @@ public class ProductServiceTest : BusinessUnitTest
     public void Define_Certain_duplicated_Product_name_exception()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product =  new ProductBuilder()
+        var product = new ProductBuilder()
             .WithProductGroup(productGroup)
             .Build();
         DbContext.Save(product);
@@ -72,7 +72,7 @@ public class ProductServiceTest : BusinessUnitTest
     public void Remove_Certain_delete_a_product()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product =  new ProductBuilder()
+        var product = new ProductBuilder()
             .WithProductGroup(productGroup)
             .Build();
         DbContext.Save(product);
@@ -176,6 +176,41 @@ public class ProductServiceTest : BusinessUnitTest
         expected.ProductTitle.Should().Be(product.Title);
         expected.LeastCount.Should().Be(product.LeastCount);
         expected.Status.Should().Be(product.Status);
+        expected.Count.Should().Be(product.Count);
+        expected.GroupName.Should().Be(product.ProductGroup.Name);
+        expected.ProductCode.Should().Be(product.Id);
+    }
+
+    [Theory]
+    [InlineData(ProductStatus.Available)]
+    [InlineData(ProductStatus.OutOfStock)]
+    [InlineData(ProductStatus.ReadyToOrder)]
+    public void GetAll_Serach_on_status_Certain(ProductStatus status)
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        var secondProductGroup = ProductGroupFactory.Generate("dummy2");
+        var product = new ProductBuilder()
+            .WithCount(10)
+            .WithStatus(status)
+            .WithProductGroup(productGroup)
+            .Build();
+        var secondProduct = new ProductBuilder()
+            .WithCount(10)
+            .WithStatus(ProductStatus.Available)
+            .WithProductGroup(secondProductGroup)
+            .Build();
+        DbContext.Save(product);
+        DbContext.Save(secondProduct);
+        var dto = new SearchOnDto
+        {
+            Status = status
+        };
+
+        var expected = _sut.GetAll(null, dto).First();
+
+        expected.ProductTitle.Should().Be(product.Title);
+        expected.LeastCount.Should().Be(product.LeastCount);
+        expected.Status.Should().Be(status);
         expected.Count.Should().Be(product.Count);
         expected.GroupName.Should().Be(product.ProductGroup.Name);
         expected.ProductCode.Should().Be(product.Id);
