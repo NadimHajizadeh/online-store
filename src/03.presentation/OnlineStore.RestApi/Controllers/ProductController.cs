@@ -21,7 +21,7 @@ public class ProductController : Controller
         _service.Define(dto);
     }
 
-    [HttpGet("get-all")]
+    [HttpGet]
     public List<GetAllProuductsDto> GetAll([FromQuery]SearchOnDto? dto,
         [FromQuery] ProductOrderBy orderBy)
     {

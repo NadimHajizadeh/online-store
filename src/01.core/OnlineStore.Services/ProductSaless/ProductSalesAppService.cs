@@ -58,6 +58,12 @@ public class ProductSalesAppService : ProductSalesService
         _unitOfWork.Complete();
     }
 
+    public List<GetAllProductSalesDto> GetAll()
+    {
+        return
+            _repository.GetAll();
+    }
+
     private void StopIfOutOfStock(Product product, int count)
     {
         if (product.Status == ProductStatus.OutOfStock)

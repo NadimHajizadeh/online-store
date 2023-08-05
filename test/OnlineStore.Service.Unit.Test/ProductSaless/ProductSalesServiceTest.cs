@@ -84,11 +84,11 @@ public class ProductSalesServiceTest : BusinessUnitTest
             .WithProductId(product.Id)
             .Build();
 
-       var expected =()=> _sut.Define(dto);
+        var expected = () => _sut.Define(dto);
 
-       expected.Should().ThrowExactly<OutofStockException>();
+        expected.Should().ThrowExactly<OutofStockException>();
     }
-    
+
     [Fact]
     public void Define_Certain_outOfStock_exception2()
     {
@@ -103,8 +103,38 @@ public class ProductSalesServiceTest : BusinessUnitTest
             .WithProductId(product.Id)
             .Build();
 
-        var expected =()=> _sut.Define(dto);
+        var expected = () => _sut.Define(dto);
 
         expected.Should().ThrowExactly<OutofStockException>();
+    }
+
+    [Fact]
+    public void GetAll_Certain_get_all()
+    {
+        var productGroup = ProductGroupFactory.Generate("dummy");
+        var product = new ProductBuilder()
+            .WithCount(100)
+            .WithStatus(ProductStatus.Available)
+            .WithProductGroup(productGroup)
+            .Build();
+        DbContext.Save(product);
+        var productSales = new ProductSales()
+        {
+            Count = 10,
+            Date = DateTime.Now,
+            CustomerName = "dummy_customer :D ",
+            ProductId = product.Id,
+            PricePerProduct = 100
+        };
+        DbContext.Save(productSales);
+
+        var expected = _sut.GetAll().Single();
+
+        expected.ProductName.Should().Be(product.Title);
+        expected.PricePerProduct.Should().Be(productSales.PricePerProduct);
+        expected.Count.Should().Be(productSales.Count);
+        expected.Date.Should().Be(productSales.Date);
+        expected.CustomerName.Should().Be(productSales.CustomerName);
+        expected.FactorNumber.Should().Be(productSales.FactorNumber);
     }
 }

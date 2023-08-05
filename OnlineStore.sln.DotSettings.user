@@ -49,5 +49,6 @@
     &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.Products.ProductServiceTest.GetAll_Serach_on_groupName_Certain&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.Products.ProductServiceTest.GetAll_Order_on_title_Certain&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.Products.ProductServiceTest.GetAll_Order_on_groupName_Certain&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BBA0C6F4-EC36-4DE9-B889-9DCE3D7BA5F7::net6.0::OnlineStore.Service.Unit.Test.ProductSaless.ProductSalesServiceTest.GetAll_Certain_get_all&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

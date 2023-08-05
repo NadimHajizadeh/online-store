@@ -20,4 +20,11 @@ public class ProductSalesController : Controller
     {
         _service.Define(dto);
     }
+
+    [HttpGet]
+    public List<GetAllProductSalesDto> GetAll()
+    {
+        return
+            _service.GetAll();
+    }
 }
