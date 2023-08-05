@@ -270,5 +270,5 @@ public class ProductServiceTest : BusinessUnitTest
         actual.GroupName.Should().Be(product.ProductGroup.Name);
         actual.ProductCode.Should().Be(product.Id);
     }
-    //todo test for status search
+   
 }
