@@ -5,6 +5,7 @@ using OnlineStore.Services.Products.Contracts.Dto;
 namespace OnlineStore.RestApi.Controllers;
 
 [Route("propducts")]
+[ApiController]
 public class ProductController : Controller
 {
     private readonly ProductService _service;
@@ -18,6 +19,14 @@ public class ProductController : Controller
     public void Add([FromBody] AddProductDto dto)
     {
         _service.Define(dto);
+    }
+
+    [HttpGet("get-all")]
+    public List<GetAllProuductsDto> GetAll([FromQuery]SearchOnDto? dto,
+        [FromQuery] ProductOrderBy orderBy)
+    {
+        return
+            _service.GetAll(orderBy,dto);
     }
 
     [HttpDelete("{id}")]

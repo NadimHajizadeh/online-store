@@ -51,6 +51,12 @@ public class ProductAppService : ProductService
         _unitOfWork.Complete();
     }
 
+    public List<GetAllProuductsDto> GetAll(ProductOrderBy? orderBy,SearchOnDto? dto)
+    {
+        return
+            _repository.GetAll(orderBy,dto);
+    }
+
     private  void StopIfProductNotFound(Product product)
     {
         if (product is null)
