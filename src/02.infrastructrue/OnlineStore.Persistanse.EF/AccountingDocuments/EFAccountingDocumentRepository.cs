@@ -17,4 +17,17 @@ public class EFAccountingDocumentRepository : AccountingDocumentRepository
     {
         _accountingDucoments.Add(accountingDocument);
     }
+
+    public List<GetAllAccountingDocumentsDto> GetAll()
+    {
+        return
+            _accountingDucoments.Select(_ => new GetAllAccountingDocumentsDto()
+            {
+                DocumentNumber = _.DocumentNumber,
+                date = _.date,
+                CustomerName = _.ProductSales.CustomerName,
+                TotalPrice = _.TotalPrice,
+                SalesFactorNumber = _.SalesFactorNumber,
+            }).ToList();
+    }
 }

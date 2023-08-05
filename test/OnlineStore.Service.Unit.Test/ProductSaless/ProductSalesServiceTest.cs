@@ -118,14 +118,8 @@ public class ProductSalesServiceTest : BusinessUnitTest
             .WithProductGroup(productGroup)
             .Build();
         DbContext.Save(product);
-        var productSales = new ProductSales()
-        {
-            Count = 10,
-            Date = DateTime.Now,
-            CustomerName = "dummy_customer :D ",
-            ProductId = product.Id,
-            PricePerProduct = 100
-        };
+        var productSales = ProductSalesFactory.Generate(product.Id,
+            DateTime.Now);
         DbContext.Save(productSales);
 
         var expected = _sut.GetAll().Single();
