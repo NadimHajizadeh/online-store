@@ -45,6 +45,12 @@ public class ProductImportAppService : ProductImportService
         _unitOfWork.Complete();
     }
 
+    public List<GetallProductImportsDto> GetAll()
+    {
+        return
+            _repository.GetAll();
+    }
+
     private  void UpdateProduct(Product product, int count)
     {
         product.Count += count;
