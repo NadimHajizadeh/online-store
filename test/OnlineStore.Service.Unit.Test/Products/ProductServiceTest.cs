@@ -111,7 +111,7 @@ public class ProductServiceTest : BusinessUnitTest
 
         expected.ProductTitle.Should().Be(product.Title);
         expected.LeastCount.Should().Be(product.LeastCount);
-        expected.Status.Should().Be(product.Status.ToString());
+        expected.Status.Should().Be(product.Status);
         expected.Count.Should().Be(product.Count);
         expected.GroupName.Should().Be(product.ProductGroup.Name);
         expected.ProductCode.Should().Be(product.Id);
@@ -143,7 +143,7 @@ public class ProductServiceTest : BusinessUnitTest
 
         expected.ProductTitle.Should().Be(product.Title);
         expected.LeastCount.Should().Be(product.LeastCount);
-        expected.Status.Should().Be(product.Status.ToString());
+        expected.Status.Should().Be(product.Status);
         expected.Count.Should().Be(product.Count);
         expected.GroupName.Should().Be(product.ProductGroup.Name);
         expected.ProductCode.Should().Be(product.Id);
@@ -175,7 +175,7 @@ public class ProductServiceTest : BusinessUnitTest
 
         expected.ProductTitle.Should().Be(product.Title);
         expected.LeastCount.Should().Be(product.LeastCount);
-        expected.Status.Should().Be(product.Status.ToString());
+        expected.Status.Should().Be(product.Status);
         expected.Count.Should().Be(product.Count);
         expected.GroupName.Should().Be(product.ProductGroup.Name);
         expected.ProductCode.Should().Be(product.Id);
@@ -202,7 +202,7 @@ public class ProductServiceTest : BusinessUnitTest
         var actual = expected.First();
         actual.ProductTitle.Should().Be(product.Title);
         actual.LeastCount.Should().Be(product.LeastCount);
-        actual.Status.Should().Be(product.Status.ToString());
+        actual.Status.Should().Be(product.Status);
         actual.Count.Should().Be(product.Count);
         actual.GroupName.Should().Be(product.ProductGroup.Name);
         actual.ProductCode.Should().Be(product.Id);
@@ -230,9 +230,10 @@ public class ProductServiceTest : BusinessUnitTest
         var actual = expected.First();
         actual.ProductTitle.Should().Be(product.Title);
         actual.LeastCount.Should().Be(product.LeastCount);
-        actual.Status.Should().Be(product.Status.ToString());
+        actual.Status.Should().Be(product.Status);
         actual.Count.Should().Be(product.Count);
         actual.GroupName.Should().Be(product.ProductGroup.Name);
         actual.ProductCode.Should().Be(product.Id);
     }
+    //todo test for status search
 }

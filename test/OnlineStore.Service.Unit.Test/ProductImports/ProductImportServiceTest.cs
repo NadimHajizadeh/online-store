@@ -1,8 +1,10 @@
 ﻿using FluentAssertions;
+using Moq;
 using OnlineStore.Entities;
 using OnlineStore.Service.Unit.Test.Products;
 using OnlineStore.Services.ProductImpotrs.Contracts;
 using OnlineStore.Services.Products.Exeptions;
+using OnlineStore.Services.Shared;
 using OnlineStore.TestTools;
 using OnlineStore.TestTools.DataBaseConfig;
 using OnlineStore.TestTools.DataBaseConfig.Unit;
@@ -18,18 +20,22 @@ public class ProductImportServiceTest : BusinessUnitTest
 {
     private readonly ProductImportService _sut;
     private readonly DateTime _date;
+    private Mock<DateTimeService> _datetimeMock;
 
     public ProductImportServiceTest()
     {
+        _datetimeMock = new Mock<DateTimeService>();
         _date = DatetimeFactory.Generate();
-        _sut = ProductImportServiceFactory.Generate(SetupContext, _date);
+        _datetimeMock.Setup(_ => _.GetTime()).Returns(_date);
+        _sut = ProductImportServiceFactory.Generate(SetupContext,
+            _datetimeMock.Object);
     }
 
     [Fact]
     public void Define_Certain_add_a_productImport()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product =  new ProductBuilder()
+        var product = new ProductBuilder()
             .WithProductGroup(productGroup)
             .Build();
         DbContext.Save(product);
@@ -54,7 +60,7 @@ public class ProductImportServiceTest : BusinessUnitTest
     public void Define_Certain_add_a_productImport_to_get_ReadyToOrde_status()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
-        var product =  new ProductBuilder()
+        var product = new ProductBuilder()
             .WithProductGroup(productGroup)
             .Build();
         DbContext.Save(product);
