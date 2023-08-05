@@ -5,6 +5,7 @@ using OnlineStore.Services.ProductGroups.Contracts.Dto;
 namespace OnlineStore.RestApi.Controllers;
 
 [Route("product-groups")]
+[ApiController]
 public class ProductGroupController : Controller
 {
     private readonly ProductGroupService _service;

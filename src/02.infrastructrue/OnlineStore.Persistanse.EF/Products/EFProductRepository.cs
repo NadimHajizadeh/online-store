@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
 using OnlineStore.Persistanse.EF;
+using OnlineStore.Services.Products.Contracts.Dto;
 
 namespace OnlineStore.Services.Products.Contracts;
 
@@ -34,5 +35,80 @@ public class EFProductRepository : ProductRepository
     {
         return
             _products.Find(productId);
+    }
+
+    public List<GetAllProuductsDto> GetAll(ProductOrderBy? orderBy,
+        SearchOnDto? dto)
+    {
+        var result = _products.Select(_ => new GetAllProuductsDto()
+        {
+            ProductCode = _.Id,
+            ProductTitle = _.Title,
+            GroupName = _.ProductGroup.Name,
+            Status = _.Status.ToString(),
+            Count = _.Count,
+            LeastCount = _.LeastCount
+        });
+
+        result = SearchByProductTitle(result, dto.Title);
+
+        result = SearchByGroupName(result, dto.GroupName);
+
+        result = OrderByTitle(result, orderBy);
+        
+        result = OrderByGroupName(result, orderBy);
+        
+         
+
+
+        return result.ToList();
+    }
+
+    private static IQueryable<GetAllProuductsDto> OrderByGroupName
+    (IQueryable<GetAllProuductsDto> result,
+        ProductOrderBy? orderBy)
+    {
+        if (orderBy is ProductOrderBy.GroupName)
+        {
+            result = result.OrderBy(_ => _.GroupName);
+        }
+
+        return result;
+    }
+
+    private static IQueryable<GetAllProuductsDto> OrderByTitle
+    (IQueryable<GetAllProuductsDto> result,
+        ProductOrderBy? orderBy)
+    {
+        if (orderBy is ProductOrderBy.Title)
+        {
+            result = result.OrderBy(_ => _.ProductTitle);
+        }
+
+        return result;
+    }
+
+    private static IQueryable<GetAllProuductsDto> SearchByGroupName(
+        IQueryable<GetAllProuductsDto> result
+        , string groupName)
+    {
+        if (groupName != null)
+        {
+            result = result.Where(_ => _.GroupName == groupName);
+        }
+
+        return result;
+    }
+
+    private static IQueryable<GetAllProuductsDto> SearchByProductTitle(
+        IQueryable<GetAllProuductsDto> result,
+        string? title)
+    {
+        if (title != null)
+        {
+            result = result.Where(_ => _.ProductTitle == title);
+        }
+
+        return result;
     }
 }

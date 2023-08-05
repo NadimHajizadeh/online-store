@@ -4,6 +4,7 @@ using OnlineStore.Specs.Test.ProductSaless.Add;
 namespace OnlineStore.RestApi.Controllers;
 
 [Route("product-sales")]
+[ApiController]
 public class ProductSalesController : Controller
 {
     private readonly ProductSalesService _service;
@@ -15,7 +16,7 @@ public class ProductSalesController : Controller
 
 
     [HttpPost]
-    public void Add(AddProductSlaseDto dto)
+    public void Add([FromBody] AddProductSlaseDto dto)
     {
         _service.Define(dto);
     }

@@ -5,6 +5,7 @@ using OnlineStore.Specs.Test.ProductImports.Add;
 namespace OnlineStore.RestApi.Controllers;
 
 [Route("product-imports")]
+[ApiController]
 public class ProductImportController : Controller
 {
     private readonly ProductImportService _service;
