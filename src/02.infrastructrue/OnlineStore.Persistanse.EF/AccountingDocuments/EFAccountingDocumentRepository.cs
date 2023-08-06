@@ -48,7 +48,7 @@ public class EFAccountingDocumentRepository : AccountingDocumentRepository
         AccountingDucomentsSerchByDto? dto,
         IQueryable<GetAllAccountingDocumentsDto> result)
     {
-        if (dto.TillDate != null)
+        if (dto?.TillDate != null)
         {
             result =
                 result.Where(_ => _.date <= dto.TillDate);
@@ -61,7 +61,7 @@ public class EFAccountingDocumentRepository : AccountingDocumentRepository
         IQueryable<GetAllAccountingDocumentsDto> result,
         AccountingDucomentsSerchByDto? dto)
     {
-        if (dto.FromDate != null)
+        if (dto?.FromDate != null)
         {
             result =
                 result.Where(_ => _.date >= dto.FromDate);
@@ -74,7 +74,7 @@ public class EFAccountingDocumentRepository : AccountingDocumentRepository
         IQueryable<GetAllAccountingDocumentsDto> result,
         AccountingDucomentsSerchByDto? dto)
     {
-        if (dto.FactorNumber != null)
+        if (dto?.FactorNumber != null)
         {
             result =
                 result.Where(_ => _.SalesFactorNumber == dto.FactorNumber);
@@ -87,7 +87,7 @@ public class EFAccountingDocumentRepository : AccountingDocumentRepository
         IQueryable<GetAllAccountingDocumentsDto> result,
         AccountingDucomentsSerchByDto? dto)
     {
-        if (dto.DocumentNumber != null)
+        if (dto?.DocumentNumber != null)
         {
             result = result.Where(_ => _.DocumentNumber == dto
                 .DocumentNumber);
