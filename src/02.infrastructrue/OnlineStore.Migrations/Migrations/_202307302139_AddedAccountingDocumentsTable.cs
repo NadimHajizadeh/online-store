@@ -8,7 +8,8 @@ public class _202307302139_AddedAccountingDocumentsTable : Migration
     public override void Up()
     {
         Create.Table("AccountingDocuments")
-            .WithColumn("DocumentNumber").AsInt32().PrimaryKey()
+            .WithColumn("Id").AsInt32().PrimaryKey().Identity()
+            .WithColumn("DocumentNumber").AsInt32().NotNullable()
             .WithColumn("Date").AsDateTime().NotNullable()
             .WithColumn("TotalPrice").AsDouble().NotNullable()
             .WithColumn("SalesFactorNumber").AsGuid()

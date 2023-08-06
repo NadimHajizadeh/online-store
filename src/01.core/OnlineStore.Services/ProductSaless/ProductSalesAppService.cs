@@ -92,13 +92,13 @@ public class ProductSalesAppService : ProductSalesService
     private void UpdateProduct(Product product, int count)
     {
         product.Count -= count;
-        if (product.Count <= product.LeastCount)
-        {
-            product.Status = ProductStatus.ReadyToOrder;
-        }
-        else if (product.Count == 0)
+        if (product.Count == 0)
         {
             product.Status = ProductStatus.OutOfStock;
+        }
+        else if (product.Count <= product.LeastCount)
+        {
+            product.Status = ProductStatus.ReadyToOrder;
         }
     }
 }

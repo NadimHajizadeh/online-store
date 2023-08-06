@@ -58,7 +58,7 @@ public class ProductImportAppService : ProductImportService
         product.Count += count;
         var status = ProductStatus.ReadyToOrder;
 
-        if (product.LeastCount < count)
+        if (product.LeastCount < product.Count)
         {
             status = ProductStatus.Available;
         }
