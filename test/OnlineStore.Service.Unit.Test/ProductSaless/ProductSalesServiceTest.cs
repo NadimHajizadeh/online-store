@@ -93,7 +93,7 @@ public class ProductSalesServiceTest : BusinessUnitTest
     }
 
     [Fact]
-    public void Define_Certain_outOfStock_exception2()
+    public void Define_Certain_outOfStock_invalid_damand_exception2()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");
         var product = new ProductBuilder()
