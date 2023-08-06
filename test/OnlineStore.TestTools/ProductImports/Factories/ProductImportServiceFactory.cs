@@ -15,8 +15,8 @@ public static class ProductImportServiceFactory
         DateTimeService? timeService)
     {
         var unitOfWork = new EFUnitOfWork(context);
-        var repasitory = new EFProductImportRepository(context);
-        var productRepasitory = new EFProductRepository(context);
+        var repository = new EFProductImportRepository(context);
+        var productRepository = new EFProductRepository(context);
         var dateTimeService = new DateTimeAppService();
         
         if (timeService is not null)
@@ -24,16 +24,16 @@ public static class ProductImportServiceFactory
             return
                 new ProductImportAppService(
                     unitOfWork,
-                    repasitory,
-                    productRepasitory,
+                    repository,
+                    productRepository,
                     timeService);
         }
 
         return
             new ProductImportAppService(
                 unitOfWork,
-                repasitory,
-                productRepasitory,
+                repository,
+                productRepository,
                 dateTimeService);
     }
 }

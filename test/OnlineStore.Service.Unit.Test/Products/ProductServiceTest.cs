@@ -230,9 +230,8 @@ public class ProductServiceTest : BusinessUnitTest
         DbContext.Save(product);
         DbContext.Save(secondProduct);
         var dto = new SearchOnDto();
-        var orderBy = ProductOrderBy.Title;
 
-        var expected = _sut.GetAll(null, dto);
+        var expected = _sut.GetAll();
 
         var actual = expected.First();
         actual.ProductTitle.Should().Be(product.Title);

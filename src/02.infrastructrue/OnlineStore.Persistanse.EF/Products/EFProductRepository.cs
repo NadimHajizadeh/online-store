@@ -50,9 +50,9 @@ public class EFProductRepository : ProductRepository
             LeastCount = _.LeastCount
         });
 
-        result = SearchByProductTitle(result, dto.Title);
+        result = SearchByProductTitle(result, dto);
 
-        result = SearchByGroupName(result, dto.GroupName);
+        result = SearchByGroupName(result, dto);
 
         result = SearchByStatus(result, dto);
 
@@ -64,9 +64,10 @@ public class EFProductRepository : ProductRepository
         return result.ToList();
     }
 
-    private static IQueryable<GetAllProuductsDto> SearchByStatus(IQueryable<GetAllProuductsDto> result, SearchOnDto dto)
+    private static IQueryable<GetAllProuductsDto> SearchByStatus(
+        IQueryable<GetAllProuductsDto> result, SearchOnDto dto)
     {
-        if (dto.Status != null)
+        if (dto?.Status != null)
         {
             result = result.Where(_ => _.Status == dto.Status);
         }
@@ -100,11 +101,11 @@ public class EFProductRepository : ProductRepository
 
     private static IQueryable<GetAllProuductsDto> SearchByGroupName(
         IQueryable<GetAllProuductsDto> result
-        , string groupName)
+        , SearchOnDto? dto)
     {
-        if (groupName != null)
+        if (dto?.GroupName != null)
         {
-            result = result.Where(_ => _.GroupName == groupName);
+            result = result.Where(_ => _.GroupName == dto.GroupName);
         }
 
         return result;
@@ -112,11 +113,11 @@ public class EFProductRepository : ProductRepository
 
     private static IQueryable<GetAllProuductsDto> SearchByProductTitle(
         IQueryable<GetAllProuductsDto> result,
-        string? title)
+        SearchOnDto? dto)
     {
-        if (title != null)
+        if (dto?.Title != null)
         {
-            result = result.Where(_ => _.ProductTitle == title);
+            result = result.Where(_ => _.ProductTitle == dto.Title);
         }
 
         return result;

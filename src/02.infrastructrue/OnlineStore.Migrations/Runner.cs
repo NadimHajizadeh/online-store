@@ -92,5 +92,5 @@ internal static class Runner
 
 public class PersistenceConfig
 {
-    public string ConnectionString { get; set; }
+    public string ConnectionString { get; set; } = null!;
 }
