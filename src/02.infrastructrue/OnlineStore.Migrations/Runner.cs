@@ -17,7 +17,7 @@ internal static class Runner
         CreateDatabase(connectionString);
         var runner = CreateRunner(connectionString, options);
 
-       
+
         runner.MigrateUp();
     }
 
@@ -27,8 +27,8 @@ internal static class Runner
         var masterConnectionString =
             ChangeDatabaseName(connectionString, "master");
         var createDataBaseCommand =
-        $"if db_id(N'{databaseName}') is" +
-        $" null create database [{databaseName}]";
+            $"if db_id(N'{databaseName}') is" +
+            $" null create database [{databaseName}]";
 
         using var connection = new SqlConnection(masterConnectionString);
         connection.Open();

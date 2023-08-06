@@ -74,7 +74,7 @@ public class AccountingDucomentServiceTest : BusinessUnitTest
         };
 
         var expected = _sut.GetAll(dto).Single();
-
+        
         expected.DocumentNumber.Should().Be(accountingDocument.DocumentNumber);
         expected.TotalPrice.Should().Be(accountingDocument.TotalPrice);
         expected.date.Should().Be(accountingDocument.date);
