@@ -1,0 +1,12 @@
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\bin\Debug\net8.0\OnlineStore.Entities.deps.json
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\bin\Debug\net8.0\OnlineStore.Entities.dll
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\bin\Debug\net8.0\OnlineStore.Entities.pdb
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\OnlineStore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\OnlineStore.Entities.AssemblyInfoInputs.cache
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\OnlineStore.Entities.AssemblyInfo.cs
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\OnlineStore.Entities.csproj.CoreCompileInputs.cache
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\OnlineStore.Entities.sourcelink.json
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\OnlineStore.Entities.dll
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\refint\OnlineStore.Entities.dll
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\OnlineStore.Entities.pdb
+D:\prijects\online-store\src\01.core\OnlineStore.Entities\obj\Debug\net8.0\ref\OnlineStore.Entities.dll

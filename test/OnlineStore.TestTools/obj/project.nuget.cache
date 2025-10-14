@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QkR8DlqEtW2jxnvW/Y5YBIJrVyGGDRPXmmeIkfQ4S5BK8+Ymq1Qioz+6Il8ppNhgEgWGAvyVD1Me/EIAs6wV/w==",
+  "dgSpecHash": "XS2ZOk99GEE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\test\\OnlineStore.TestTools\\OnlineStore.TestTools.csproj",
+  "projectFilePath": "D:\\prijects\\online-store\\test\\OnlineStore.TestTools\\OnlineStore.TestTools.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nadim\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.18\\microsoft.aspnetcore.cryptography.internal.6.0.18.nupkg.sha512",
@@ -143,10 +143,7 @@
     "C:\\Users\\Nadim\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
+    "C:\\Users\\Nadim\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,12 @@
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\bin\Debug\net8.0\OnlineStore.Infrastructure.deps.json
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\bin\Debug\net8.0\OnlineStore.Infrastructure.dll
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\bin\Debug\net8.0\OnlineStore.Infrastructure.pdb
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\OnlineStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\OnlineStore.Infrastructure.AssemblyInfoInputs.cache
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\OnlineStore.Infrastructure.AssemblyInfo.cs
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\OnlineStore.Infrastructure.csproj.CoreCompileInputs.cache
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\OnlineStore.Infrastructure.sourcelink.json
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\OnlineStore.Infrastructure.dll
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\refint\OnlineStore.Infrastructure.dll
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\OnlineStore.Infrastructure.pdb
+D:\prijects\online-store\src\02.infrastructrue\OnlineStore.Infrastructure\obj\Debug\net8.0\ref\OnlineStore.Infrastructure.dll

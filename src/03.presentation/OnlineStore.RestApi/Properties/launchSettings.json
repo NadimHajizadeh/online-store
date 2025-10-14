@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "BluePrint.RestApi": {
+    "OnlineStore.RestApi": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

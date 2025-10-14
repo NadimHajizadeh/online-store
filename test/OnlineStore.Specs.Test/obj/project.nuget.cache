@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/iQhD4PRPk4rTieESJSG9lKCGQXjuEqhfKEBPUz0iKHkipmp4AWkFIEiwykm8VT0DSCi6ZnG+4K+2NLiE6tdvA==",
+  "dgSpecHash": "idstdN1vPYs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nadim\\RiderProjects\\Online Store\\test\\OnlineStore.Specs.Test\\OnlineStore.Specs.Test.csproj",
+  "projectFilePath": "D:\\prijects\\online-store\\test\\OnlineStore.Specs.Test\\OnlineStore.Specs.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nadim\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
@@ -160,10 +160,7 @@
     "C:\\Users\\Nadim\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\Nadim\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
-    "C:\\Users\\Nadim\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
+    "C:\\Users\\Nadim\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }
