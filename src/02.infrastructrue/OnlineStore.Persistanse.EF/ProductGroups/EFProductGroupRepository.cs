@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Entities;
 using OnlineStore.Services.ProductGroups.Contracts;
+using OnlineStore.Services.ProductGroups.Contracts.Dto;
 
 namespace OnlineStore.Persistanse.EF.ProductGroups;
 
@@ -52,5 +53,16 @@ public class EFProductGroupRepository : ProductGroupRepository
     {
         return
             _productGroups.Any(_ => _.Id == productGroupId);
+    }
+
+    public List<GetAllProdectGroupsDto> GetAll()
+    {
+        return
+            _productGroups.Select(_ => new GetAllProdectGroupsDto()
+                {
+                    Name = _.Name,
+                    Id = _.Id
+                }
+            ).ToList();
     }
 }

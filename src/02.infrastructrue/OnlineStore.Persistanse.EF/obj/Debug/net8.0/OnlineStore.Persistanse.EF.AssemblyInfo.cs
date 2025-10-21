@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineStore.Persistanse.EF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1afd7bd95212d24f97885e220699228b15022d82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0509e8cc49b7ee42274ed061f38e2e71fd72b27c")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineStore.Persistanse.EF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineStore.Persistanse.EF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

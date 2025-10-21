@@ -15,6 +15,13 @@ public class ProductGroupController : Controller
         _service = service;
     }
 
+    [HttpGet]
+    public List<GetAllProdectGroupsDto> GetAll()
+    {
+        return
+            _service.getAll();
+    }
+
     [HttpPost]
     public void Add([FromBody] AddProductGroupDto dto)
     {

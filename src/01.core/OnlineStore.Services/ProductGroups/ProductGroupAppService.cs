@@ -59,6 +59,11 @@ public class ProductGroupAppService : ProductGroupService
         _unitOfWork.Complete();
     }
 
+    public List<GetAllProdectGroupsDto> getAll()
+    {
+        return _repository.GetAll();
+    }
+
     private void StopIfNotFound(ProductGroup? productGroup)
     {
         if (productGroup is null)

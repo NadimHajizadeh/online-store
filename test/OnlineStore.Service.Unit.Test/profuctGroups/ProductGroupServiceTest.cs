@@ -34,6 +34,23 @@ public class ProductGroupServiceTest : BusinessUnitTest
     }
 
     [Fact]
+    public void GetAllProductGroup()
+    {
+        var pg = ProductGroupFactory.Generate("dummyName");
+        var pg2 = ProductGroupFactory.Generate("dummyName2");
+        var pg3 = ProductGroupFactory.Generate("dummyName3");
+        DbContext.Save(pg);
+        DbContext.Save(pg2);
+        DbContext.Save(pg3);
+
+        var expected = _sut.getAll();
+
+        expected.Count.Should().Be(3);
+        expected.First().Name.Should().Be("dummyName");
+        expected.Last().Name.Should().Be("dummyName3");
+    }
+
+    [Fact]
     public void Define_Certain_duplicated_name_exception_throw()
     {
         var productGroup = ProductGroupFactory.Generate("dummy");

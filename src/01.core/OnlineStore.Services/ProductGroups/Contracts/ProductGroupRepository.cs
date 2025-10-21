@@ -1,4 +1,5 @@
 ﻿using OnlineStore.Entities;
+using OnlineStore.Services.ProductGroups.Contracts.Dto;
 
 namespace OnlineStore.Services.ProductGroups.Contracts;
 
@@ -11,4 +12,5 @@ public interface ProductGroupRepository
     void Remove(ProductGroup productGroup);
     bool HasProduct(int productGroupId);
     bool IsExistById(int productGroupId);
+    List<GetAllProdectGroupsDto> GetAll();
 }
